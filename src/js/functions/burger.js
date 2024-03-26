@@ -16,12 +16,12 @@ import scrollLock from 'scroll-lock';
       burger?.setAttribute('aria-expanded', 'true');
       overlay?.setAttribute('data-menu-overlay', 'true');
       burger?.setAttribute('aria-label', 'Закрыть меню');
-      scrollLock.disablePageScroll();
+      scrollLock.disablePageScroll(menu);
     } else {
       burger?.setAttribute('aria-expanded', 'false');
       overlay?.setAttribute('data-menu-overlay', 'false');
       burger?.setAttribute('aria-label', 'Открыть меню');
-      scrollLock.enablePageScroll();
+      scrollLock.enablePageScroll(menu);
     }
   });
 
@@ -31,7 +31,7 @@ import scrollLock from 'scroll-lock';
     overlay?.setAttribute('data-menu-overlay', 'false');
     burger.classList.remove('burger--active');
     menu.classList.remove('menu--active');
-    scrollLock.enablePageScroll();
+    scrollLock.enablePageScroll(menu);
   });
 
   menuItems?.forEach(el => {
@@ -41,7 +41,7 @@ import scrollLock from 'scroll-lock';
       overlay?.setAttribute('data-menu-overlay', 'false');
       burger.classList.remove('burger--active');
       menu.classList.remove('menu--active');
-      scrollLock.enablePageScroll();
+      scrollLock.enablePageScroll(menu);
     });
   });
 
@@ -52,7 +52,7 @@ import scrollLock from 'scroll-lock';
       overlay?.setAttribute('data-menu-overlay', 'false');
       burger.classList.remove('burger--active');
       menu.classList.remove('menu--active');
-      scrollLock.enablePageScroll();
+      scrollLock.enablePageScroll(menu);
     })
   })
 })();
