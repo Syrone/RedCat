@@ -1,0 +1,179 @@
+<header class="header">
+  <div class="header__top">
+    <div class="container header__top-container">
+      <button class="btn burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+      <button type="button" class="btn search header__search d-lg-flex d-none">
+        <span class="icon">
+          <svg>
+            <use xlink:href="img/icons/search.svg#svg-search"></use>
+          </svg>
+        </span>
+      </button>
+
+      <a href="#" class="btn header__logo logo">
+        <picture>
+          <source srcset="./img/logo.webp" type="image/webp">
+          <img loading="lazy" src="./img/logo.png" class="image" width="132" height="22" alt="Рыжий кот">
+        </picture>
+      </a>
+
+      <nav class="header__nav">
+        <ul data-da="#headerMenu,992,first" class="list-reset header__top-list">
+          <li class="header__top-list-item">
+            <a href="#" class="btn header__top-list-link">
+              О компании
+            </a>
+          </li>
+          <li class="header__top-list-item">
+            <a href="#" class="btn header__top-list-link">
+              Доставка и оплата
+            </a>
+          </li>
+          <li class="header__top-list-item">
+            <a href="#" class="btn header__top-list-link">
+              Магазины
+            </a>
+          </li>
+          <li class="header__top-list-item">
+            <a href="#" class="btn header__top-list-link">
+              Отзывы
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div data-da="#headerMenuFooter,992,first" class="header__phone phone">
+        <a href="tel:88007008316" class="btn phone__link">
+          8 (800) 700 83 16
+        </a>
+        <span class="phone__text">
+          ежедневно с 9-00 до 21-00
+        </span>
+      </div>
+      <ul class="list-reset user__list header__user-list">
+        <li class="user__list-item">
+          <a href="#" class="btn user__list-link">
+            <span class="icon">
+              <svg id="svg-account" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="currentColor"/>
+                <mask id="mask" style="mask-type:alpha" maskUnits="userSpaceOnUse">
+                <circle cx="15" cy="15" r="15" fill="#787878"/>
+                </mask>
+                <g mask="url(#mask)">
+                <circle cx="15" cy="26" r="10" fill="#FFDEB8"/>
+                </g>
+                <circle cx="15" cy="10" r="5" fill="#FFDEB8"/>
+              </svg>
+            </span>
+            <span class="d-lg-none d-block">
+              Войти
+            </span>
+          </a>
+        </li>
+        <li class="user__list-item">
+          <a href="#" class="btn user__list-link">
+            <span class="icon">
+              <svg>
+                <use xlink:href="img/icons/.svg#svg-"></use>
+              </svg>
+            </span>
+            <span class="d-lg-none d-block">
+              Корзина
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container header__bottom-container">
+      <nav class="header__bottom-nav">
+        <ul data-da="#headerMenu,992,last" class="list-reset header__bottom-list">
+          <li class="header__bottom-item">
+            <a href="#" class="btn header__bottom-link">
+              Акции
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="btn header__bottom-link">
+              Кошки
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="btn header__bottom-link">
+              Собаки
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="btn header__bottom-link">
+              Грызуны
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="btn header__bottom-link">
+              Птицы
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="btn header__bottom-link">
+              Рыбы
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="btn header__bottom-link">
+              Ветаптека
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="btn header__bottom-link">
+              Ветклиника
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="btn header__bottom-link">
+              Груминг
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="btn search header__search">
+          <span class="icon">
+            <svg>
+              <use xlink:href="img/icons/search.svg#svg-search"></use>
+            </svg>
+          </span>
+          <span class="search__text">
+            Поиск товара
+          </span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <div class="header__menu" data-menu>
+    <div class="header__menu-header">
+      <button type="button" class="btn burger burger--active" data-menu-close>
+        <span class="burger__line"></span>
+      </button>
+
+      <a href="#" class="btn header__logo logo">
+        <picture>
+          <source srcset="./img/logo.webp" type="image/webp">
+          <img loading="lazy" src="./img/logo.png" class="image" width="132" height="22" alt="Рыжий кот">
+        </picture>
+      </a>
+    </div>
+
+    <nav id="headerMenu" class="header__menu-nav">
+
+    </nav>
+
+    <div id="headerMenuFooter" class="header__menu-footer">
+
+    </div>
+  </div>
+
+  <div data-menu-overlay="false"></div>
+</header>

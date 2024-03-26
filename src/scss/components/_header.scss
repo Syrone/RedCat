@@ -1,0 +1,125 @@
+.header {
+	width: 100%;
+	background-color: transparent;
+	padding-block-start: 3.125rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+
+	&--sticky {
+		background-color: var(--background-light);
+		transform: initial;
+		transition: background var(--transition-duration) var(--transition-type), transform var(--transition-duration) var(--transition-type);
+	}
+
+	&__logo {
+		height: 22px;
+		display: block;
+
+		.image {
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: contain;
+		}
+	}
+
+	&__top {
+
+		&-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1.25rem;
+		}
+
+		&-list {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+
+			&-link {
+				--_font-size: 1.125rem;
+			}
+		}
+	}
+
+	&__nav {
+		margin-inline-end: auto;
+	}
+
+	&__bottom {
+		margin-block-start: 1.25rem;
+
+		&-nav {
+			display: flex;
+			align-items: stretch;
+			justify-content: space-between;
+			border: 1px solid var(--primary-color);
+			border-radius: var(--radius-xl);
+		}
+
+		&-list {
+			display: flex;
+			align-items: center;
+			gap: 1.5rem;
+			padding: .85rem 1rem .85rem 2.5rem;
+		}
+
+		&-link {
+			--_font-size: 1.25rem;
+		}
+	}
+
+	&__search {
+		--_font-size: 1.125rem;
+		--_background-color: var(--primary-color--50);
+		--_border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
+		--_padding-x: 1.25rem;
+		--_icon-size: 1.5rem;
+		--_icon-color: var(--primary-color);
+
+		--_border-color-active: var(--primary-color);
+		--_background-color-active: var(--primary-color--50);
+		--_icon-color-active: var(--primary-color);
+
+		flex-shrink: 0;
+		border-inline-start: 1px solid var(--primary-color);
+		padding-inline-end: 3rem;
+
+		.icon {
+			transition: color var(--_transition-duration) var(--_transition-type);
+		}
+	}
+
+	&__menu {
+		display: none;
+	}
+}
+
+.burger {
+	@include burger;
+
+	display: none;
+}
+
+[data-menu-overlay] {
+	width: 100%;
+	height: 100vh;
+	height: 100dvh;
+	background-color: rgba($color: #000000, $alpha: .5);
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	transition: opacity var(--transition-duration) var(--transition-type), visibility var(--transition-duration) var(--transition-type);
+}
+
+[data-menu-overlay=true] {
+	opacity: 1;
+	visibility: visible;
+	z-index: 15;
+}

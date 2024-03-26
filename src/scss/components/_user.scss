@@ -1,0 +1,21 @@
+.user {
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+
+		&-link {
+			--_font-size: 1.125rem;
+			
+			--_icon-size: 1.875rem;
+			--_icon-color: var(--primary-color);
+
+			--_icon-color-active: var(--primary-color);
+
+			.icon {
+				transition: color var(--_transition-duration) var(--_transition-type);
+			}
+		}
+	}
+}

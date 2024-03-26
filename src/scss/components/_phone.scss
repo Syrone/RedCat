@@ -1,0 +1,10 @@
+.phone {
+	display: flex;
+	flex-direction: column;
+
+	font-size: .625rem;
+
+	&__link {
+		--_font-size: .875rem
+	}
+}
