@@ -1,0 +1,25 @@
+.banner-main {
+	background-repeat: no-repeat;
+	background-size: 1500px 588px;
+	background-position: center 0;
+
+	&__inner {
+		background-repeat: no-repeat;
+		background-size: 1500px 588px;
+		background-position: center 0;
+	}
+
+	&__info {
+		width: 100%;
+		max-width: 620px;
+		min-height: 580px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-block: 4rem;
+	}
+
+	&__title {
+		margin-block-end: 2.5rem;
+	}
+}

@@ -51,8 +51,8 @@
 	}
 
 	// global
-	.main {
-		margin-block-start: var(--header-height, 80px);
+	.section-main {
+		padding-block-start: var(--header-height, 80px);
 	}
 
 	// header
@@ -115,7 +115,7 @@
 			background-color: var(--background-light);
 			border-radius: var(--radius-xl) 0 0 var(--radius-xl);
 			padding: 1.25rem 1.5rem;
-			overflow-y: scroll;
+			overflow-y: auto;
 			overflow-x: hidden;
 			position: fixed;
 			top: 0;
@@ -164,9 +164,33 @@
 
 @media (max-width: 768px) {
 
+	// typography
+	h1, h2,
+	.h1, .h2 {
+		font-size: 1.75rem;
+	}
+
+	// buttons
+	.btn-primary {
+		--_height: 1.875rem;
+
+		--_font-size: .875rem;
+		--_padding-x: .75rem;
+
+		padding-inline-end: .375rem;
+
+		&--icon {
+			--_icon-size: 1.25rem;
+
+			.icon {
+				padding: .375rem;
+			}
+		}
+	}
+
 	// global
-	.main {
-		margin-block-start: var(--header-height, 70px);
+	.section-main {
+		padding-block-start: var(--header-height, 70px);
 	}
 
 	.user {
@@ -177,6 +201,16 @@
 			&-link {
 				--_icon-size: 1.25rem;
 			}
+		}
+	}
+
+	.badge {
+		gap: .25rem;
+		font-size: .625rem;
+		padding: .25rem .625rem .25rem .25rem;
+
+		&__icon {
+			--_i-size: 1.125rem;
 		}
 	}
 
@@ -191,6 +225,18 @@
 			--_icon-size: 1.25rem;
 
 			margin-inline-start: .875rem;
+		}
+	}
+
+	// banners
+	.banner-main {
+
+		&__info {
+			max-width: 360px;
+		}
+
+		&__title {
+			margin-block-end: 1.25rem;
 		}
 	}
 

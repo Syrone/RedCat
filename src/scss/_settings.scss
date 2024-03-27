@@ -27,7 +27,18 @@ html {
 
 .main {
   flex: 1;
-  margin-block-start: var(--header-height, 160px);
+}
+
+.section-main {
+  padding-block-start: var(--header-height, 160px);
+}
+
+.background-primary-25 {
+  background-color: var(--background-primary-25) !important;
+}
+
+.background-primary-50 {
+  background-color: var(--background-primary-50) !important;
 }
 
 img {
