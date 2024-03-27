@@ -1,0 +1,39 @@
+.advantages {
+
+	&__list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: flex-start;
+		gap: 2.5rem;
+
+		&-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 1.25rem;
+		}
+
+		&-picture {
+			flex-shrink: 0;
+		}
+
+		&-image {
+			display: block;
+			width: 3.5rem;
+			height: 3.5rem;
+			margin-block-start: -1rem;
+			object-fit: contain;
+		}
+
+		&-title {
+			font-family: var(--font-family);
+			font-size: 1.5rem;
+			margin-block-end: 1.25rem;
+		}
+
+		&-text {
+			font-size: 1.25rem;
+			color: var(--gray-color);
+		}
+	}
+}

@@ -1,11 +1,9 @@
 .banner-main {
-	background-repeat: no-repeat;
-	background-size: 1500px 588px;
-	background-position: center 0;
 
+	&,
 	&__inner {
 		background-repeat: no-repeat;
-		background-size: 1500px 588px;
+		background-size: 1920px 580px;
 		background-position: center 0;
 	}
 
@@ -20,6 +18,18 @@
 	}
 
 	&__title {
-		margin-block-end: 2.5rem;
+		margin-block: 2.5rem;
+
+		> span {
+			display: inline-block;
+			position: relative;
+
+			.banner-main__badge {
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+			}
+		}
 	}
+
 }

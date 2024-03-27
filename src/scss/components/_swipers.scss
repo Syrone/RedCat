@@ -1,0 +1,16 @@
+.wrapper-swiper {
+	position: relative;
+}
+
+.swiper-pagination {
+	--swiper-pagination-bullet-size: .625rem;
+	--swiper-pagination-color: var(--primary-color-dark);
+	--swiper-pagination-bullet-inactive-color: var(--primary-color);
+	--swiper-pagination-bullet-horizontal-gap: .25rem;
+	--swiper-pagination-bullet-opacity: 1;
+	--swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+.swiper-main .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: 1.5rem;
+}
