@@ -197,6 +197,22 @@
 		}
 	}
 
+	// catalog
+	.catalog-block {
+
+		&__list {
+
+			&-item {
+				grid-column: span 3;
+				background-size: cover;
+
+				&:last-child {
+					grid-column: -1 / 1;
+				}
+			}
+		}
+	}
+
 }
 
 @media (max-width: 768px) {
@@ -241,6 +257,14 @@
 			height: 6.4rem;
 			background-size: 62.5rem 6.4rem;
 			top: -2.5rem;
+		}
+	}
+
+	.section {
+		margin-block-end: 5rem;
+
+		&-header {
+			margin-block-end: 2.5rem;
 		}
 	}
 
@@ -307,6 +331,10 @@
 	}
 
 	// advantages
+	.section-advantages {
+		margin-block-end: 3.75rem;
+	}
+
 	.advantages {
 
 		&__list {
@@ -332,6 +360,40 @@
 			}
 		}
 	}
+
+		// catalog
+		.catalog-block {
+
+			&__list {
+				grid-auto-rows: minmax(160px, auto);
+				gap: 1.25rem;
+	
+				&-item {
+					grid-column: -1 / 1;
+
+					&:nth-child(-n+2) {
+						grid-column: -1 / 1;
+					}
+				}
+
+				&-card {
+					padding: 1.25rem;
+				}
+
+				&-name {
+					max-width: 120px;
+					font-size: 1rem;
+				}
+
+				&-icon {
+					--_i-size: 1.875rem;
+
+					padding: .625rem;
+					top: .625rem;
+					right: .625rem;
+				}
+			}
+		}
 
 }
 
