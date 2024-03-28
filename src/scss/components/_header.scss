@@ -9,6 +9,7 @@
 
 	&--sticky {
 		background-color: var(--background-light);
+		padding-block: 1.5rem;
 		transform: initial;
 		transition: background var(--transition-duration) var(--transition-type), transform var(--transition-duration) var(--transition-type);
 	}
