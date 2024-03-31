@@ -1,0 +1,145 @@
+.card {
+	--card-font-size: 1rem;
+	--card-font-weight: 400;
+	--card-color: #000;
+	--card-background-color: var(--background-light);
+	--card-border: 1px solid #c4c4c4;
+	--card-radius: var(--radius-xl);
+	--card-padding-y: 1.25rem;
+	--card-padding-x: 1.25rem;
+
+	font-size: var(--card-font-size);
+	font-weight: var(--card-font-weight);
+	color: var(--card-color);
+	background-color: var(--card-background-color);
+	border: var(--card-border);
+	border-radius: var(--card-radius);
+	padding: var(--card-padding-y) var(--card-padding-x);
+
+	&__pictures {
+		height: 13.125rem;
+		margin-block-end: .625rem;
+		border: 1px solid #ffc692;
+		border-radius: var(--card-radius);
+		padding: .625rem;
+
+		&-image {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__title {
+		font-family: var(--font-family);
+		font-size: var(--card-font-size);
+		margin-block-end: .625rem;
+	}
+
+	&__choice {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		margin-block-end: .75rem;
+		border: 1px solid #ffc692;
+		border-radius: var(--card-radius);
+		overflow: hidden;
+	}
+
+	&__label {
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		cursor: pointer;
+		position: relative;
+
+		&-input {
+			width: 1px;
+			height: 1px;
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+
+			&:checked ~ .card__label-text {
+				color: var(--dark-color);
+				background-color: #FFEBD4;
+			}
+		}
+
+		&-text {
+			display: block;
+			width: 100%;
+			height: 100%;
+			line-height: normal;
+			color: var(--gray-color);
+			padding: .0625rem;
+			transition: color var(--transition-duration) var(--transition-type), background var(--transition-duration) var(--transition-type);
+		}
+	}
+
+	&__info {
+		min-height: clamp(1.75rem, 2.25vw, 2.5rem);
+		display: flex;
+		justify-content: space-between;
+		gap: .625rem;
+
+		&-start {
+			display: grid;
+		}
+	}
+
+	&__price {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: .25rem;
+		font-size: clamp(1rem, 1.5vw, 1.25rem);
+		font-weight: 500;
+
+		&-sale {
+			font-size: clamp(.875rem, 1.25vw, var(--card-font-size));
+			font-weight: 400;
+			text-decoration: line-through;
+			color: #b9b9b9;
+		}
+	}
+
+	&__sale {
+		font-size: clamp(.625rem, 1.25vw, var(--card-font-size));
+		color: var(--primary-color);
+
+		&-value {
+			font-weight: 500;
+		}
+	}
+
+	&__cashback {
+		width: max-content;
+		display: flex;
+		align-items: center;
+		gap: .25rem;
+		font-size: .625rem;
+		line-height: normal;
+		color: #628f47;
+		border: 1px solid #628f47;
+		border-radius: var(--card-radius);
+		padding: .25rem;
+
+		&-icon {
+			--_i-size: .875rem;
+		}
+	}
+
+	&__buttons {
+		margin-block-start: .75rem;
+
+		&-cart {
+			width: 100%;
+		}
+	}
+}
+

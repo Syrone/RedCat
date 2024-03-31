@@ -1,5 +1,17 @@
 @media (max-width: 1400px) {
 
+	// global
+
+	.section-new-card {
+
+		&::after {
+			top: initial;
+			bottom: -5rem;
+			right: initial;
+			left: max(-1.25rem, calc((100% - var(--content-width)) / 2) - 4.6rem);
+		}
+	}
+
 	// banners
 	.banner-main {
 
@@ -12,6 +24,15 @@
 }
 
 @media (max-width: 1200px) {
+
+	// swipers
+	.swiper-card {
+
+		.swiper {
+			margin-inline: calc(var(--container-offset) * -1);
+			padding-inline: var(--container-offset);
+		}
+	}
 
 	// header
 	.header {
@@ -304,6 +325,26 @@
 		bottom: 0;
 	}
 
+	.swiper-button-next,
+	.swiper-button-prev {
+		--swiper-navigation-size: 2.25rem;
+		--swiper-navigation-icon-size: .875rem;
+
+		top: calc((var(--swiper-navigation-size) + 1.875rem) * -1);
+	}
+
+	.swiper-button-prev,
+	.swiper-rtl .swiper-button-next {
+		right: calc(var(--swiper-navigation-size) + .625rem);
+	}
+
+	.swiper-card {
+
+		&-header {
+			padding-inline-end: 6rem;
+		}
+	}
+
 	// global
 	.section-main {
 		padding-block-start: var(--header-height, 70px);
@@ -315,6 +356,16 @@
 			height: 6.4rem;
 			background-size: 62.5rem 6.4rem;
 			top: -2.5rem;
+		}
+	}
+
+	.section-new-card {
+		
+		&::after {
+			width: 4.5rem;
+			height: 4.5rem;
+			left: max(-.875rem, calc((100% - var(--content-width)) / 2) - 4.6rem);
+			bottom: -3.25rem;
 		}
 	}
 

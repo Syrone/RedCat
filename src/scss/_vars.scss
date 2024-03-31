@@ -1,7 +1,7 @@
 :root {
   // base
-  --content-width: 1200px;
-  --container-offset: 20px;
+  --content-width: 75rem;
+  --container-offset: 1.25rem;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   
   // fonts

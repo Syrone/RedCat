@@ -14,3 +14,51 @@
 .swiper-main .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
 	bottom: 1.5rem;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+	--swiper-navigation-size: 2.875rem;
+	--swiper-navigation-color: var(--primary-color);
+	--swiper-navigation-icon-size: 1.25rem;
+	
+	width: var(--swiper-navigation-size);
+	background-color: var(--background-light, #fff);
+	margin-top: initial;
+	border: 1px solid var(--primary-color);
+	border-radius: 50%;
+	top: calc((var(--swiper-navigation-size) + 3.75rem) * -1);
+	transform: initial;
+	transition: color var(--transition-duration) var(--transition-type), background var(--transition-duration) var(--transition-type);
+
+	&::after {
+		all: unset;
+	}
+
+	.icon {
+		--_i-size: var(--swiper-navigation-icon-size);
+	}
+
+	&:is(:hover, :focus-visible, :active, .is-active) {
+		--swiper-navigation-color: var(--light-color);
+		
+		background-color: var(--primary-color);
+	}
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+	right: 0;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+	right: calc(var(--swiper-navigation-size) + .875rem);
+	left: auto;
+}
+
+.swiper-card {
+
+	&-header {
+		padding-inline-end: 7.25rem;
+	}
+}
