@@ -82,6 +82,24 @@ html {
   }
 }
 
+.section-share-card {
+
+  &::after {
+    content: '';
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    background-image: url(../img/background/svg/decoration-pattern-5.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: calc(40% - 4rem);
+    left: max(-3rem, calc((100% - var(--content-width)) / 2) - 12rem);
+    z-index: -1;
+  }
+}
+
 .section {
   margin-block-end: 6.25rem;
 

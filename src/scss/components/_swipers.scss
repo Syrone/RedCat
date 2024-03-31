@@ -1,5 +1,9 @@
 .wrapper-swiper {
 	position: relative;
+
+	* {
+		user-select: none;
+	}
 }
 
 .swiper-pagination {

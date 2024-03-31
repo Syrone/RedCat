@@ -86,3 +86,24 @@
 		}
 	}
 }
+
+.btn-favorite,
+.btn-compare {
+	--_icon-size: 1.25rem;
+}
+
+.btn-favorite {
+
+	.icon {
+		fill: transparent;
+		transition: fill var(--transition-duration) var(--transition-type);
+	}
+
+	&:is(:hover, :focus-visible, :active, .is-active) {
+
+		.icon {
+			fill: var(--primary-color);
+			transition: fill var(--transition-duration) var(--transition-type);
+		}
+	}
+}
