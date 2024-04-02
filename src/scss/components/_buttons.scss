@@ -101,6 +101,18 @@
 	--_background-color-active: var(--primary-color-dark);
 }
 
+.btn-outline-secondary {
+	--_height: 2.5rem;
+	
+	--_color: var(--gray-color);
+	--_background-color: transparent;
+	--_border: 1px solid var(--gray-color);
+	--_border-radius: var(--radius-xxl);
+	--_padding-x: 1rem;
+
+	--_border-color-active: var(--primary-color);
+}
+
 .btn-favorite,
 .btn-compare {
 	--_icon-size: 1.25rem;

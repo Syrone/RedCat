@@ -1,0 +1,140 @@
+.graph-modal {
+	--_modal-padding-y: 1.875rem;
+	--_modal-padding-x: 1.875rem;
+	background-color: rgba(0, 0, 0, 0.32);
+
+	&::before {
+		all: unset;
+	}
+
+	&__close {
+		--_color: var(--light-color);
+		--_background-color: var(--dark-color);
+		--_border-radius: 50%;
+		--_padding-y: .5rem;
+		--_padding-x: .5rem;
+
+		--_icon-size: .625rem;
+
+		--_background-color-active: var(--dark-color);
+
+		background-image: initial;
+		top: 1rem;
+		right: 1rem;
+
+		&-icon {
+			--_i-size: 18px;
+		}
+	}
+
+	&__container {
+		width: 100%;
+		max-width: 28.125rem;
+		min-height: calc(100% - 6.25rem);
+
+		align-items: center;
+		background-color: transparent;
+		padding: 0;
+		pointer-events: none;
+
+		&.graph-modal-open {
+			display: flex;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		background-color: var(--background-light);
+		border-radius: var(--radius-xl);
+		padding: var(--_modal-padding-y) var(--_modal-padding-x);
+		pointer-events: auto;
+		position: relative;
+	}
+
+	&__picture {
+		display: block;
+		margin: calc(var(--_modal-padding-y) * -1) calc(var(--_modal-padding-x) * -1) 1.25rem;
+	}
+
+	&__image {
+		max-height: 12.5rem;
+
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: var(--radius-xl);
+	}
+
+	&__title {
+		font-size: 1.875rem;
+		text-align: center;
+		margin-block-end: 1.25rem;
+	}
+
+	&__form {
+
+		&-buttons {
+			display: flex;
+			flex-direction: column;
+			gap: .625rem;
+			margin-block: 1rem 1.25rem;
+		}
+
+		&-btn {
+			--_font-size: 1rem;
+			--_border-radius: var(--radius-md);
+
+			width: 100%;
+		}
+	}
+}
+
+.other-signin {
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: .625rem;
+		margin-block-end: 1.25rem;
+	}
+
+	&__btn {
+		--_font-size: .625rem;
+		--_background-color: var(--primary-color--50);
+		--_border-radius: var(--radius-xl);
+		--_padding-y: .25rem;
+		--_padding-x: .25rem;
+
+		--_color-active: var(--light-color);
+		--_background-color-active: var(--primary-color);
+
+		width: 100%;
+		justify-content: space-between;
+		padding-inline-start: 1rem;
+	}
+
+	&__image {
+		width: 1.875rem;
+		height: 1.875rem;
+
+		display: block;
+		object-fit: contain;
+	}
+}
+
+.signin-change {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	gap: .25rem;
+	color: var(--gray-color);
+
+	&__btn {
+		--_font-size: inherit;
+		--_line-height: inherit;
+		--_color: var(--primary-color);
+		
+		--_color-active: var(--primary-color-dark);
+		
+	}
+}

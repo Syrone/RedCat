@@ -1,0 +1,32 @@
+.wrapper-field {
+	position: relative;
+
+	&__title {
+		font-family: var(--font-family);
+		font-size: 1rem;
+		margin-block-end: .625rem;
+	}
+
+	+ .wrapper-field {
+		margin-block-start: .625rem;
+	}
+}
+
+.input {
+	--input-height: 1.875rem;
+	--input-background: #d9d9d9;
+	--input-border: 0;
+	--input-radius: var(--radius-md);
+	--input-padding-y: 0;
+	--input-padding-x: 1rem;
+	
+	width: 100%;
+	min-height: var(--input-height);
+	display: block;
+	background-color: var(--input-background);
+	margin: 0;
+	border: var(--input-border);
+	border-radius: var(--input-radius);
+	padding: var(--input-padding-y) var(--input-padding-x);
+	outline: none;
+}
