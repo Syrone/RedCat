@@ -1,0 +1,19 @@
+.yandex-rating {
+	display: flex;
+	flex-direction: column;
+	gap: .75rem;
+	font-size: 1.25rem;
+	font-weight: 400;
+	margin-block-start: .75rem;
+
+	&__image {
+		display: block;
+		width: 1.875rem;
+		height: 1.875rem;
+		object-fit: contain;
+	}
+
+	&__btn {
+		gap: 0.5rem;
+	}
+}

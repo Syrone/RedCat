@@ -2,7 +2,8 @@ import Swiper, { Navigation, Pagination, Thumbs } from 'swiper';
 Swiper.use([Navigation, Pagination, Thumbs]);
 
 const swiperMainClass = document.querySelectorAll('.swiper-main'),
-			swiperCardClass = document.querySelectorAll('.swiper-card')
+			swiperCardClass = document.querySelectorAll('.swiper-card'),
+			swiperRecommendedClass = document.querySelectorAll('.swiper-recommended')
 
 swiperMainClass?.forEach((classSwiper) => {
 	const swiper = classSwiper.querySelector('.swiper'),
@@ -54,29 +55,65 @@ swiperCardClass?.forEach((classSwiper) => {
 				spaceBetween: 20
 			}
 		},
+	})
+})
 
-		on: {
-			init: function () {
-				const prevIcon = document.createElement('span');
-				prevIcon.classList.add('icon');
-				prevIcon.innerHTML = `
-					<svg>
-						<use xlink:href="img/icons/swiper-arrow-left.svg#svg-swiper-arrow-left"></use>
-					</svg>
-				`;
+swiperRecommendedClass?.forEach((classSwiper) => {
+	const swiper = classSwiper.querySelector('.swiper'),
+				navPrev = classSwiper.querySelector('.swiper-button-prev'),
+				navNext = classSwiper.querySelector('.swiper-button-next')
 
-				const nextIcon = document.createElement('span');
-				nextIcon.classList.add('icon');
-				nextIcon.innerHTML = `
-					<svg>
-						<use xlink:href="img/icons/swiper-arrow-right.svg#svg-swiper-arrow-right"></use>
-					</svg>
-				`;
+	new Swiper(swiper, {
+		slidesPerView: 3,
+		grabCursor: true,
+		spaceBetween: 20,
+		loop: true,
 
-				navPrev.appendChild(prevIcon);
-				navNext.appendChild(nextIcon);
+		navigation: {
+			prevEl: navPrev,
+			nextEl: navNext,
+		},
+
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+				spaceBetween: 20
 			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 20
+			},
+			1200: {
+				slidesPerView: 3,
+				spaceBetween: 20
+			}
 		},
 	})
 
 })
+
+// Adding icons to navigation buttons
+const navPrevs = document.querySelectorAll('.swiper-button-prev');
+const navNexts = document.querySelectorAll('.swiper-button-next');
+
+navPrevs?.forEach((btn) => {
+	const prevIcon = document.createElement('span');
+	prevIcon.classList.add('icon');
+	prevIcon.innerHTML = `
+		<svg>
+			<use xlink:href="img/icons/swiper-arrow-left.svg#svg-swiper-arrow-left"></use>
+		</svg>
+	`;
+	btn.appendChild(prevIcon);
+});
+
+navNexts?.forEach((btn) => {
+	const nextIcon = document.createElement('span');
+	nextIcon.classList.add('icon');
+	nextIcon.innerHTML = `
+		<svg>
+			<use xlink:href="img/icons/swiper-arrow-right.svg#svg-swiper-arrow-right"></use>
+		</svg>
+	`;
+	btn.appendChild(nextIcon);
+});

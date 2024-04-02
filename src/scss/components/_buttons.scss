@@ -77,6 +77,7 @@
 
 		--_icon-color-active: var(--primary-color);
 
+		justify-content: space-between;
 		padding-inline-end: .5rem;
 
 		.icon {
@@ -85,6 +86,19 @@
 			padding: .625rem;
 		}
 	}
+}
+
+.btn-secondary {
+	--_height: 2.5rem;
+
+	--_font-size: 1rem;
+	--_color: var(--dark-color);
+	--_background-color: var(--primary-color--50);
+	--_border-radius: var(--radius-xxl);
+	--_padding-x: 1rem;
+
+	--_color-active: var(--light-color);
+	--_background-color-active: var(--primary-color-dark);
 }
 
 .btn-favorite,

@@ -1,0 +1,9 @@
+.social__list {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+
+	&-link {
+		--_icon-size: 1.875rem;
+	}
+}
