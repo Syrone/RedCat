@@ -1,16 +1,21 @@
 .banner-main {
+	background-image: var(--banner-image);
+
+	&__inner {
+		background-image: var(--banner-inner-image);
+	}
 
 	&,
 	&__inner {
 		background-repeat: no-repeat;
-		background-size: 1920px 580px;
+		background-size: 120rem 36.25rem;
 		background-position: center 0;
 	}
 
 	&__info {
 		width: 100%;
-		max-width: 620px;
-		min-height: 580px;
+		max-width: 38.75rem;
+		min-height: 36.25rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;

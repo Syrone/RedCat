@@ -4,13 +4,18 @@
       <button class="btn burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
         <span class="burger__line"></span>
       </button>
-      <button type="button" class="btn search header__search d-lg-flex d-none">
-        <span class="icon">
-          <svg>
-            <use xlink:href="img/icons/search.svg#svg-search"></use>
-          </svg>
-        </span>
-      </button>
+      <div class="header__search js-search">
+        <form class="header__search-form js-search-form">
+          <input type="text" name="search" class="header__search-input input" placeholder="Поиск...">
+        </form>
+        <button type="button" class="btn search header__search-btn js-search-btn d-lg-flex d-none">
+          <span class="icon">
+            <svg>
+              <use xlink:href="img/icons/search.svg#svg-search"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
 
       <a href="#" class="btn header__logo logo">
         <picture>
@@ -138,16 +143,22 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="btn search header__search">
-          <span class="icon">
-            <svg>
-              <use xlink:href="img/icons/search.svg#svg-search"></use>
-            </svg>
-          </span>
-          <span class="search__text">
-            Поиск товара
-          </span>
-        </button>
+        <div class="header__search js-search">
+          <form class="header__search-form js-search-form">
+            <input type="text" name="search" class="header__search-input input" placeholder="Поиск...">
+          </form>
+
+          <button type="button" class="btn header__search-btn js-search-btn">
+            <span class="icon">
+              <svg>
+                <use xlink:href="img/icons/search.svg#svg-search"></use>
+              </svg>
+            </span>
+            <span class="header__search-text">
+              Поиск товара
+            </span>
+          </button>
+        </div>
       </nav>
     </div>
   </div>

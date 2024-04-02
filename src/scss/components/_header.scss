@@ -74,24 +74,67 @@
 	}
 
 	&__search {
-		--_font-size: 1.125rem;
-		--_background-color: var(--primary-color--50);
-		--_border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
-		--_padding-x: 1.25rem;
-		--_icon-size: 1.5rem;
-		--_icon-color: var(--primary-color);
-
-		--_border-color-active: var(--primary-color);
-		--_background-color-active: var(--primary-color--50);
-		--_icon-color-active: var(--primary-color);
-
 		flex-shrink: 0;
-		border-inline-start: 1px solid var(--primary-color);
-		padding-inline-end: 3rem;
+		position: relative;
+		z-index: 1;
 
-		.icon {
-			transition: color var(--_transition-duration) var(--_transition-type);
+		&-btn {
+			--_height: 100%;
+			--_font-size: 1.125rem;
+			--_background-color: var(--primary-color--50);
+			--_border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
+			--_padding-x: 1.25rem;
+			--_icon-size: 1.5rem;
+			--_icon-color: var(--primary-color);
+
+			--_border-color-active: var(--primary-color);
+			--_background-color-active: var(--primary-color--50);
+			--_icon-color-active: var(--primary-color);
+			
+			border-inline-start: 1px solid var(--primary-color);
+			padding-inline-end: 3rem;
+
+			.icon {
+				transition: color var(--_transition-duration) var(--_transition-type);
+			}
 		}
+
+		&-form {
+			width: 20rem;
+			height: 3.625rem;
+			background-color: var(--primary-color--50);
+			border-radius: var(--radius-xl) 0 0 var(--radius-xl);
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(-50%);
+			position: absolute;
+			top: 50%;
+			right: 0;
+			z-index: -1;
+			transition: opacity var(--transition-duration) var(--transition-type), visibility var(--transition-duration) var(--transition-type), right var(--transition-duration) var(--transition-type);
+
+			&.is-active {
+				opacity: 1;
+				visibility: visible;
+				right: 100%;
+			}
+		}
+
+		&-input {
+			--input-background: var(--primary-color--50);
+			--input-border: 1px solid var(--primary-color);
+
+			height: 100%;
+			font-size: 1.25rem;
+			color: var(--dark-color);
+			border-radius: var(--input-radius) 0 0 var(--input-radius);
+
+			&::placeholder {
+				font-size: inherit;
+				color: var(--dark-color);
+			}
+		}
+
 	}
 
 	&__menu {

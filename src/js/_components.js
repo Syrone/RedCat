@@ -4,3 +4,4 @@ import './components/transferBlocks.js';
 import './components/swipers.js';
 import './components/card.js';
 import './components/modals.js';
+import './components/search.js';
