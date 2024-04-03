@@ -253,12 +253,16 @@
 @media (max-width: 992px) {
 
 	// settings
-	.d-lg-flex {
-		display: flex !important;
-	}
-
 	.d-lg-none {
 		display: none !important;
+	}
+
+	.d-lg-block {
+		display: block !important;
+	}
+
+	.d-lg-flex {
+		display: flex !important;
 	}
 
 	// global
@@ -646,7 +650,7 @@
 	.wrapper-field {
 
 		&__title {
-			font-size: .625rem;
+			font-size: .875rem;
 			margin-block-end: .25rem;
 		}
 
@@ -656,11 +660,8 @@
 	}
 
 	.input {
-		--input-height: 1.25rem;
 		--input-radius: .25rem;
 		--input-padding-x: .5rem;
-
-		font-size: .625rem;
 	}
 
 	// modals
@@ -669,15 +670,10 @@
 		--_modal-padding-x: 1.25rem;
 
 		&__container {
-			max-width: 16.25rem;
+			max-width: 22.5rem;
 		}
 
 		&__close {
-			--_padding-y: .375rem;
-			--_padding-x: .375rem;
-
-			--_icon-size: .5rem;
-
 			top: .625rem;
 			right: .625rem;
 		}
@@ -687,11 +683,11 @@
 		}
 
 		&__image {
-			max-height: 7.5rem;
+			max-height: 9.5rem;
 		}
 
 		&__title {
-			font-size: 1rem;
+			font-size: 1.25rem;
 			margin-block-end: 1rem;
 		}
 
@@ -703,8 +699,8 @@
 			}
 
 			&-btn {
-				--_height: 1.5rem;
-				--_font-size: .625rem;
+				--_height: 1.875rem;
+				--_font-size: .875rem;
 				--_border-radius: .25rem;
 			}
 		}
@@ -719,8 +715,7 @@
 		}
 
 		&__btn {
-			--_padding-y: .125rem;
-			--_padding-x: .125rem;
+			--_font-size: .625rem;
 
 			padding-inline-start: .625rem;
 		}
@@ -732,7 +727,7 @@
 	}
 
 	.signin-change {
-		font-size: .625rem;
+		font-size: .75rem;
 		gap: .125rem;
 	}
 
