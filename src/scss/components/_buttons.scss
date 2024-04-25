@@ -88,6 +88,20 @@
 	}
 }
 
+.btn-outline-primary {
+	--_height: 2.5rem;
+
+	--_color: var(--dark-color);
+	--_background-color: var(--background-light);
+	--_border: var(--border-width) var(--border-type) var(--border-primary);
+	--_border-radius: var(--radius-xxl);
+	--_padding-x: 1rem;
+
+	--_color-active: var(--dark-color);
+	--_background-color-active: var(--background-primary-50);
+	--_border-color-active: var(--border-primary);
+}
+
 .btn-secondary {
 	--_height: 2.5rem;
 

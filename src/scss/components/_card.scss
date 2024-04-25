@@ -8,6 +8,7 @@
 	--card-padding-y: 1.25rem;
 	--card-padding-x: 1.25rem;
 
+	max-width: 18.125rem;
 	font-size: var(--card-font-size);
 	font-weight: var(--card-font-weight);
 	color: var(--card-color);
@@ -259,4 +260,11 @@
 			width: 100%;
 		}
 	}
+}
+
+.card__list {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1.25rem;
+	justify-items: center;
 }

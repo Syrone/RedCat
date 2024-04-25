@@ -1,0 +1,44 @@
+.promotional {
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1.875rem;
+
+		&-item {
+			height: 100%;
+			min-height: 10rem;
+			background-color: var(--background-primary-25);
+			border-radius: var(--radius-xl);
+			padding: 1.875rem;
+
+			&.background-secondary {
+
+				.promotional__list-text {
+					color: var(--primary-color--25);
+				}
+			}
+		}
+
+		&-title,
+		&-text {
+			font-size: 1.25rem;
+		}
+
+		&-title {
+			font-weight: 400;
+			color: var(--gray-color);
+			margin-top: -.625rem;
+			margin-left: -.625rem;
+			margin-bottom: 1.875rem;
+		}
+
+		&-icon {
+			--_i-size: 6rem;
+
+			margin-top: -4.5rem;
+			margin-left: -1rem;
+			margin-bottom: 1rem;
+		}
+	}
+}

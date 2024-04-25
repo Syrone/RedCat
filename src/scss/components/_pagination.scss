@@ -1,0 +1,30 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .625rem;
+	margin-block-start: 2.5rem;
+
+	&__prev,
+	&__next,
+	&__list-item {
+		flex-shrink: 0;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: .625rem;
+
+		&-btn {
+			--_border: var(--border-width) var(--border-type) var(--background-primary-75);
+			--_padding-x: .25rem;
+
+			--_background-color-active: var(--background-primary-75);
+			--_border-color-active: var(--background-primary-75);
+
+			width: 2.5rem;
+		}
+	}
+}
