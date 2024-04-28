@@ -1,0 +1,151 @@
+$grid-columns: 12;
+$offset: 40;
+$orders: 5;
+
+$breakpoints: (
+  xxl: 1400px,
+  xl: 1200px,
+  lg: 992px,
+  md: 768px,
+  sm: 576px,
+  xs: 360px,
+);
+
+$direction-values: (
+  row: row,
+  row-reverse: row-reverse,
+  column: column,
+  column-reverse: column-reverse
+);
+
+$justify-content-values: (
+  start: start,
+  center: center,
+  end: end
+);
+
+$align-items-values: (
+  stretch: stretch,
+  start: start,
+  center: center,
+  end: end
+);
+
+@mixin media($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin bp($name) {
+  $width: map-get($breakpoints, $name);
+  @include media($width) {
+    @content;
+  }
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--offset-5);
+}
+
+@for $i from 1 through $grid-columns {
+  .grid-col-#{$i} {
+    grid-column: span #{$i} !important;
+  }
+}
+
+@for $i from 0 through $offset {
+  .grid-gap-#{$i} {
+    gap: var(--offset-#{$i}) !important;
+  }
+}
+
+@for $i from 0 through $offset {
+  .grid-gap-y-#{$i} {
+    column-gap: var(--offset-#{$i}) !important;
+  }
+}
+
+@for $i from 0 through $offset {
+  .grid-gap-x-#{$i} {
+    row-gap: var(--offset-#{$i}) !important;
+  }
+}
+
+@each $class, $value in $direction-values {
+  .flex-#{$class} {
+    flex-direction: $value !important;
+  }
+}
+
+@each $class, $value in $justify-content-values {
+  .justify-content-#{$class} {
+    justify-content: $value !important;
+  }
+}
+
+@each $class, $value in $align-items-values {
+  .align-items-#{$class} {
+    align-items: $value !important;
+  }
+}
+
+@for $i from 1 through $orders {
+  .order-#{$i} {
+    order: $i !important;
+  }
+}
+
+@each $bp, $width in $breakpoints {
+  @include media($width) {
+    @for $i from 1 through $grid-columns {
+      .grid-col-#{$bp}-#{$i} {
+        grid-column: span #{$i} !important;
+      }
+    }
+
+    @for $i from 1 through $grid-columns {
+      .grid-gap-#{$bp}-#{$i} {
+        gap: var(--offset-#{$i}) !important;
+      }
+    }
+
+    @for $i from 0 through $offset {
+      .grid-gap-y-#{$bp}-#{$i} {
+        column-gap: var(--offset-#{$i}) !important;
+      }
+    }
+
+    @for $i from 0 through $offset {
+      .grid-gap-x-#{$bp}-#{$i} {
+        row-gap: var(--offset-#{$i}) !important;
+      }
+    }
+
+    @each $class, $value in $direction-values {
+      .flex-#{$bp}-#{$class} {
+        flex-direction: $value !important;
+      }
+    }
+    
+    @each $class, $value in $justify-content-values {
+      .justify-content-#{$bp}-#{$class} {
+        justify-content: $value !important;
+      }
+    }
+    
+    @each $class, $value in $align-items-values {
+      .align-items-#{$bp}-#{$class} {
+        align-items: $value !important;
+      }
+    }
+    
+    @for $i from 1 through $orders {
+      .order-#{$bp}-#{$i} {
+        order: $i !important;
+      }
+    }
+  }
+}

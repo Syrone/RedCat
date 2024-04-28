@@ -30,3 +30,67 @@
 	padding: var(--input-padding-y) var(--input-padding-x);
 	outline: none;
 }
+
+.input-lg {
+	--input-height: 2.5rem;
+	--input-radius: var(--radius-3xl);
+}
+
+.input-primary-75 {
+	--input-background: var(--primary-color--75);
+}
+
+.input-title {
+	font-family: var(--font-family);
+	font-size: var(--fs-sm);
+	margin-block-end: .5rem;
+}
+
+.select {
+	--select-height: 1.875rem;
+	--select-font-size: .875rem;
+	--select-color: var(--light-color);
+	--select-background: var(--background-primary);
+	--select-border: 0;
+	--select-radius: var(--radius-xl);
+	--select-padding: 0 3rem 0 1.25rem;
+
+	appearance: none;
+
+	width: 100%;
+	min-height: var(--select-height);
+	display: block;
+	font-size: var(--select-font-size);
+	color: var(--select-color);
+	background-color: var(--select-background);
+	margin: 0;
+	border: var(--select-border);
+	border-radius: var(--select-radius);
+	padding: var(--select-padding);
+	outline: none;
+}
+
+.select-outline {
+	--select-color: var(--primary-color--50);
+	--select-background: transparent;
+	--select-border: 1px solid var(--primary-color--50);
+
+	~ .select-arrow {
+		--_i-color: var(--primary-color--50);
+	}
+
+	option {
+		background-color: var(--background-primary);
+	}
+}
+
+.select-arrow {
+	--_i-size: .75rem;
+	--_i-color: var(--light-color);
+
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	right: 1.25rem;
+	transform: translateY(-50%);
+}

@@ -1,0 +1,22 @@
+.list-circle {
+	display: flex;
+	flex-direction: column;
+	gap: .825rem;
+
+	li {
+		padding-inline-start: 1.75rem;
+		position: relative;
+		
+		&::before {
+			content: '';
+			width: 1.25rem;
+			height: 1.25rem;
+			display: block;
+			background-color: var(--background-primary-50);
+			border-radius: 50%;
+			position: absolute;
+			top: -.125rem;
+			left: 0;
+		}
+	}
+}

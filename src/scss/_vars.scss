@@ -9,9 +9,18 @@
   --font-second: "Inter", sans-serif;
   --font-third: "MontserratAlternates", sans-serif;
 
+  --fs-xs: .75rem;
+  --fs-sm: .875rem;
+  --fs: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-xxl: 1.75rem;
+
   // colors
   --primary-color: #ef7f1a;
   --primary-color-dark: #c05e05;
+  --primary-color-darker: #a14d00;
   --primary-color--25: #fdf1e6;
   --primary-color--50: #ffdeb8;
   --primary-color--75: #ffc692;
@@ -21,9 +30,11 @@
   --gray-color: #787878;
 
   //backgrounds
-  --background-primary-25: #fdf1e6;
-  --background-primary-50: #ffdeb8;
-  --background-primary-75: #ffc692;
+  --background-primary: var(--primary-color);
+  --background-primary-dark: var(--primary-color-dark);
+  --background-primary-25: var(--primary-color--25);
+  --background-primary-50: var(--primary-color--50);
+  --background-primary-75: var(--primary-color--75);
   --background-light: #ffffff;
 
   // border
@@ -32,6 +43,7 @@
   --border-color: #C4C4C4;
   --border-primary: var(--primary-color);
   --border-primary-dark: var(--primary-color-dark);
+  --border-primary-50: var(--primary-color--50);
 
   // radius
   --radius-sm: .5rem;
@@ -40,6 +52,49 @@
   --radius-xl: 1.25rem;
   --radius-xxl: 1.5rem;
   --radius-3xl: 2rem;
+
+  // offset
+  --offset-0: 0;
+  --offset-1: .25rem;
+  --offset-2: .5rem;
+  --offset-3: 1rem;
+  --offset-4: 1.25rem;
+  --offset-5: 1.5rem;
+  --offset-6: 1.75rem;
+  --offset-7: 1.875rem;
+  --offset-8: 2rem;
+  --offset-9: 2.125rem;
+  --offset-10: 2.25rem;
+  --offset-11: 2.375rem;
+  --offset-12: 2.5rem;
+  --offset-13: 2.625rem;
+  --offset-14: 2.75rem;
+  --offset-15: 2.875rem;
+  --offset-16: 3rem;
+  --offset-17: 3.125rem;
+  --offset-18: 3.25rem;
+  --offset-19: 3.375rem;
+  --offset-20: 3.5rem;
+  --offset-21: 3.625rem;
+  --offset-22: 3.75rem;
+  --offset-23: 3.875rem;
+  --offset-24: 4rem;
+  --offset-25: 4.125rem;
+  --offset-26: 4.25rem;
+  --offset-27: 4.375rem;
+  --offset-28: 4.5rem;
+  --offset-29: 4.625rem;
+  --offset-30: 4.75rem;
+  --offset-31: 4.875rem;
+  --offset-32: 5rem;
+  --offset-33: 5.125rem;
+  --offset-34: 5.25rem;
+  --offset-35: 5.375rem;
+  --offset-36: 5.5rem;
+  --offset-37: 5.625rem;
+  --offset-38: 5.75rem;
+  --offset-39: 5.875rem;
+  --offset-40: 6rem;
 
   // transition
   --transition-duration: 300ms;

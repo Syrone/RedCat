@@ -6,8 +6,14 @@
 
 // подключения компонентов страницы
 @import "./components/typography";
+@import "./components/sections";
+@import "./components/display";
+@import "./components/offset";
+@import "./components/text";
 @import "./components/icons";
 @import "./components/buttons";
+@import "./components/color";
+@import "./components/background";
 @import "./components/swipers";
 @import "./components/user";
 @import "./components/phone";
@@ -20,6 +26,8 @@
 @import "./components/modal";
 @import "./components/card";
 @import "./components/pagination";
+@import "./components/list";
+@import "./components/grid";
 @import "./components/header";
 @import "./components/banners";
 @import "./components/advantages";
@@ -29,5 +37,7 @@
 @import "./components/recommended";
 @import "./components/filter";
 @import "./components/promotional";
+@import "./components/account";
+@import "./components/reward";
 @import "./components/footer";
 @import "./components/media";

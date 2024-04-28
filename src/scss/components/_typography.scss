@@ -9,3 +9,43 @@ h1, h2,
 .h1, .h2 {
 	font-size: 3.125rem;
 }
+
+h3,
+.h3 {
+	font-size: 2.5rem;
+}
+
+$breakpoints: (
+  xs: 360px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$font-size-value: (
+	1: --fs,
+	2: --fs-xs,
+	3: --fs-sm,
+	4: --fs-md,
+	5: --fs-lg,
+	6: --fs-xl,
+	7: --fs-xxl
+);
+
+@each $key, $size in $font-size-value {
+  .fs-#{$key} {
+    font-size: var(#{$size});
+  }
+}
+
+@each $key, $size in $font-size-value {
+	@each $breakpointKey, $breakpointValue in $breakpoints {
+		.fs-#{$breakpointKey}-#{$key} {
+			@media (max-width: map-get($breakpoints, $breakpointKey)) {
+				font-size: var(#{$size});
+			}
+		}
+	}
+}

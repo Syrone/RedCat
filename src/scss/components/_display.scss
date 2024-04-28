@@ -1,0 +1,49 @@
+$display-values: (
+  none: none,
+	inline: inline,
+	inline-block: inline-block,
+  block: block,
+	inline-flex: inline-flex,
+  flex: flex,
+	grid: grid,
+	contents: contents,
+	webkit-box: -webkit-box
+);
+
+$breakpoints: (
+  xxl: 1400px,
+  xl: 1200px,
+  lg: 992px,
+  md: 768px,
+  sm: 576px,
+  xs: 360px,
+);
+
+@mixin media($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin bp($name) {
+  $width: map-get($breakpoints, $name);
+  @include media($width) {
+    @content;
+  }
+}
+
+@each $class, $value in $display-values {
+	.d-#{$class} {
+		display: $value !important;
+	}
+}
+
+@each $bp, $width in $breakpoints {
+  @include media($width) {
+		@each $class, $value in $display-values {
+			.d-#{$bp}-#{$class} {
+				display: $value !important;
+			}
+		}
+	}
+}

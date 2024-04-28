@@ -18,6 +18,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_modals_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/modals.js */ "./src/js/components/modals.js");
 /* harmony import */ var _components_search_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/search.js */ "./src/js/components/search.js");
 /* harmony import */ var _components_search_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_search_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_account_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/account.js */ "./src/js/components/account.js");
+/* harmony import */ var _components_account_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_account_js__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
@@ -153,6 +156,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
 
+
+/***/ }),
+
+/***/ "./src/js/components/account.js":
+/*!**************************************!*\
+  !*** ./src/js/components/account.js ***!
+  \**************************************/
+/***/ (() => {
+
+const accountAside = document.querySelector('.js-account-aside'),
+  accountMain = document.querySelector('.js-account-main'),
+  accountAsideBtns = document.querySelectorAll('.js-btn-account-aside'),
+  accountMainBtns = document.querySelectorAll('.js-btn-account-main');
+accountAsideBtns?.forEach(btn => {
+  btn.addEventListener('click', function () {
+    accountMain?.classList.remove('is-show');
+    accountAside?.classList.add('is-show');
+  });
+});
+accountMainBtns?.forEach(btn => {
+  btn.addEventListener('click', function () {
+    accountAside?.classList.remove('is-show');
+    accountMain?.classList.add('is-show');
+  });
+});
 
 /***/ }),
 
@@ -362,7 +390,7 @@ swiperRecommendedClass?.forEach(classSwiper => {
         slidesPerView: 1,
         spaceBetween: 20
       },
-      768: {
+      576: {
         slidesPerView: 2,
         spaceBetween: 20
       },

@@ -79,7 +79,7 @@ swiperRecommendedClass?.forEach((classSwiper) => {
 				slidesPerView: 1,
 				spaceBetween: 20
 			},
-			768: {
+			576: {
 				slidesPerView: 2,
 				spaceBetween: 20
 			},
