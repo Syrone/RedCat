@@ -1,0 +1,13 @@
+.article {
+	font-size: 1.25rem;
+
+	&-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: .5rem;
+	}
+
+	.list-circle-sm li::before {
+		top: .125rem;
+	}
+}

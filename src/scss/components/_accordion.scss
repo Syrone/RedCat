@@ -1,0 +1,45 @@
+.accordion {
+	font-size: 1.25rem;
+	background-color: var(--background-primary-25);
+	border-radius: var(--radius-3xl);
+	padding: 1.875rem;
+
+	&__btn {
+		--_font-size: inherit;
+		--_icon-size: 2.25rem;
+
+		--_color-active: var(--dark-color);
+
+		width: 100%;
+		justify-content: space-between;
+		text-align: start;
+
+		&-icon {
+			flex-shrink: 0;
+			transition: transform var(--transition-duration) var(--transition-type);
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-rows: 0fr;
+		margin-block-start: 0;
+		transition: grid-template-rows var(--transition-duration) var(--transition-type), margin var(--transition-duration) var(--transition-type);
+
+		&-inner {
+			overflow: hidden;
+		}
+	}
+
+	&.is-active {
+
+		.accordion__btn-icon {
+			transform: rotate(45deg);
+		}
+
+		.accordion__content {
+			grid-template-rows: 1fr;
+			margin-block-start: 1.875rem;
+		}
+	}
+}

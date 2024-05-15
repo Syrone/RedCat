@@ -73,7 +73,14 @@
   margin-block-end: 6.25rem;
 
   &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-block-end: 3.75rem;
+
+    &-btn {
+      --_padding-x: 4rem;
+    }
   }
 
   &-title {

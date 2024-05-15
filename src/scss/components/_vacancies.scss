@@ -1,0 +1,51 @@
+.vacancies {
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 6.25rem;
+		height: 6.25rem;
+		background-image: url(../img/background/svg/decoration-pattern-7.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		position: absolute;
+		bottom: -2.5rem;
+		left: -3.75rem;
+	}
+
+	&__features {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 3rem 1.25rem;
+
+		&-item {
+			display: flex;
+			align-items: flex-start;
+			gap: .875rem;
+		}
+
+		&-picture {
+			width: 3.5rem;
+			height: 3.5rem;
+			display: block;
+			flex-shrink: 0;
+
+			.image {
+				width: 100%;
+				height: 100%;
+				display: block;
+				object-fit: contain;
+			}
+		}
+
+		&-title {
+			font-family: var(--font-family);
+			font-size: 1.25rem;
+			margin-block-end: .875rem;
+		}
+
+
+	}
+}

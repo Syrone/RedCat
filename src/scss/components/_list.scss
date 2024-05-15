@@ -20,3 +20,39 @@
 		}
 	}
 }
+
+.list-circle-sm {
+
+	li {
+
+		&::before {
+			width: 1rem;
+			height: 1rem;
+			top: -.0625rem;
+		}
+	}
+}
+
+.list-circle-xs {
+
+	li {
+		padding-inline-start: 1.25rem;
+
+		&::before {
+			width: .625rem;
+			height: .625rem;
+			top: .1875rem;
+		}
+	}
+}
+
+.list-circle-primary-75 {
+
+	
+	li {
+
+		&::before {
+			background-color: var(--background-primary-75);
+		}
+	}
+}

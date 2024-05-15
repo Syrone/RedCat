@@ -1,0 +1,32 @@
+.ads {
+	font-size: 1.25rem;
+
+	&__image {
+		display: block;
+		min-height: 37.5rem;
+		background-color: #D9D9D9;
+		border-radius: var(--radius-3xl);
+	}
+
+	&__title {
+		font-family: var(--font-family);
+		margin-block-end: 3.125rem;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 1.25rem 1.875rem;
+
+		&-name {
+			max-width: 7.5rem;
+			color: var(--gray-color);
+		}
+
+		&-value {
+			display: grid;
+			align-items: start;
+			gap: .375rem;
+		}
+	}
+}

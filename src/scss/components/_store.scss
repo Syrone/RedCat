@@ -1,0 +1,49 @@
+.swiper-stores {
+
+	&::after,
+	&::before {
+		content: '';
+		width: 6.25rem;
+		height: 6.25rem;
+		display: block;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		position: absolute;
+		z-index: -1;
+	}
+
+	&::after {
+		background-image: url(../img/background/svg/decoration-pattern-8.svg);
+		top: 0;
+		right: .5rem;
+	}
+
+	&::before {
+		background-image: url(../img/background/svg/decoration-pattern-9.svg);
+		bottom: -3.75rem;
+		left: 28%;
+	}
+
+	.swiper {
+		margin-inline: 4.375rem;
+
+		&-slide {
+			height: auto;
+		}
+
+		&-button {
+
+			&-prev,
+			&-next {
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			&-prev {
+				left: 0;
+			}
+		}
+	}
+
+}

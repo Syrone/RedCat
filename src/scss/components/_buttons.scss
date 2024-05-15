@@ -78,7 +78,7 @@
 		--_icon-color-active: var(--primary-color);
 
 		justify-content: space-between;
-		padding-inline-end: .5rem;
+		padding-inline-end: .375rem;
 
 		.icon {
 			background-color: var(--background-light);
@@ -107,7 +107,7 @@
 		--_icon-color-active: var(--light-color);
 
 		justify-content: space-between;
-		padding-inline-end: .5rem;
+		padding-inline-end: .375rem;
 
 		.icon {
 			background-color: var(--background-primary-dark);
@@ -170,6 +170,18 @@
 	--_border-color-active: var(--primary-color);
 }
 
+.btn-outline-dark {
+	--_height: 2.5rem;
+	
+	--_color: var(--dark-color);
+	--_background-color: transparent;
+	--_border: 1px solid var(--dark-color);
+	--_border-radius: var(--radius-xxl);
+	--_padding-x: 1rem;
+
+	--_border-color-active: var(--primary-color);
+}
+
 .btn-favorite,
 .btn-compare {
 	--_icon-size: 1.25rem;
@@ -191,9 +203,30 @@
 	}
 }
 
+.btn-back {
+	--_font-size: 1.25rem;
+	--_color: var(--gray-color);
+}
+
+.btn-inherit {
+	--_font-size: inherit;
+	--_font-weight: inherit;
+	--_line-height: inherit;
+	--_color: inherit;
+
+	width: fit-content;
+}
+
 .btn-sm {
 	--_height: 1.875rem;
 	--_font-size: 1rem;
 	--_border-radius: var(--radius-xl);
 	--_padding-x: .75rem;
+}
+
+.btn-lg {
+	--_height: 3.75rem;
+	--_font-size: 1.25rem;
+	--_border-radius: var(--radius-3xl);
+	--_padding-x: 1.25rem;
 }

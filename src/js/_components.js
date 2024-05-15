@@ -6,3 +6,7 @@ import './components/card.js';
 import './components/modals.js';
 import './components/search.js';
 import './components/account.js';
+import './components/tabs.js';
+import './components/video.js';
+import './components/accordion.js';
+import './components/catalog-dropdown.js';

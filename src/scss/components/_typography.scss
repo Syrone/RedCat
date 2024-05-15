@@ -15,14 +15,58 @@ h3,
 	font-size: 2.5rem;
 }
 
+h4,
+.h4 {
+	font-size: 2rem;
+}
+
+h5,
+.h5 {
+	font-size: 1.5rem;
+}
+
+.font-family {
+	font-family: var(--font-family) !important;
+}
+
+.font-second {
+	font-family: var(--font-second) !important;
+}
+
+.font-third {
+	font-family: var(--font-third) !important;
+}
+
+.text-underline {
+	text-decoration: underline !important;
+	text-underline-offset: .25em;
+}
+
+.text-initial {
+	text-decoration: initial !important;
+}
+
 $breakpoints: (
-  xs: 360px,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
+  xxl: 1400px,
   xl: 1200px,
-  xxl: 1400px
+  lg: 992px,
+  md: 768px,
+  sm: 576px,
+  xs: 360px,
 );
+
+@mixin media($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin bp($name) {
+  $width: map-get($breakpoints, $name);
+  @include media($width) {
+    @content;
+  }
+}
 
 $font-size-value: (
 	1: --fs,
@@ -34,17 +78,39 @@ $font-size-value: (
 	7: --fs-xxl
 );
 
+$font-weight-value: (
+	100: 100,
+	200: 200,
+	300: 300,
+	400: 400,
+	500: 500,
+	600: 600,
+	700: 700
+);
+
 @each $key, $size in $font-size-value {
   .fs-#{$key} {
-    font-size: var(#{$size});
+    font-size: var(#{$size}) !important;
   }
 }
 
-@each $key, $size in $font-size-value {
-	@each $breakpointKey, $breakpointValue in $breakpoints {
-		.fs-#{$breakpointKey}-#{$key} {
-			@media (max-width: map-get($breakpoints, $breakpointKey)) {
-				font-size: var(#{$size});
+@each $key, $size in $font-weight-value {
+  .fw-#{$key} {
+    font-weight: $size !important;
+  }
+}
+
+@each $bp, $width in $breakpoints {
+  @include media($width) {
+		@each $key, $size in $font-size-value {
+			.fs-#{$bp}-#{$key} {
+				font-size: var(#{$size}) !important;
+			}
+		}
+		
+		@each $key, $size in $font-weight-value {
+			.fw-#{$bp}-#{$key} {
+				font-weight: $size !important;
 			}
 		}
 	}

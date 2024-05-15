@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <h1 class="visually-hidden">
+    Личный кабинет
+  </h1>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="section-main section article">
+        <div class="container section-main__inner">
+          <div class="grid-row">
+            <div class="grid-col-7 grid-col-lg-12">
+              <div class="section-header article-header">
+                <button class="btn btn-back d-md-none">
+                  <span class="icon">
+                    <svg>
+                      <use xlink:href="img/icons/swiper-arrow-left.svg#svg-swiper-arrow-left"></use>
+                    </svg>
+                  </span>
+                  вернуться обратно
+                </button>
+                <h2 class="h2 section-title">
+                  Чипирование питомцев
+                </h2>
+              </div>
+
+              <div class="article__picture--transfer"></div>
+
+              <p>
+                Новая услуга в нашем веткабинете! <br>
+                Это современный способ индентификации питомца, проще говоря, электронный паспорт, который содержит всю
+                важную информацию о животном и его владельце.
+              </p>
+              <p class="mye-4">
+                Зачем чипируют домашних животных?
+              </p>
+              <ul class="list-reset list-circle list-circle-sm text-gray mye-5">
+                <li>
+                  Поиск потерявшегося питомца
+                </li>
+                <li>
+                  Выезд за границу
+                </li>
+                <li>
+                  Для участия во многих выставках, <br>
+                  наличия чипа является обязательным условием
+                </li>
+              </ul>
+
+              <p class="mye-4">
+                Основные требования перед процедурой, <br> такие же, как и у плановых прививок:
+              </p>
+              <ul class="list-reset list-circle list-circle-sm text-gray mye-5">
+                <li>
+                  Питомец должен быть абсолютно здоров
+                </li>
+                <li>
+                  Предварительно обработан от паразитов!
+                </li>
+              </ul>
+
+              <p class="text-gray">
+                Для питомца эта процедура не болезненнее, чем прививка!
+              </p>
+              <p class="mys-2 text-gray">
+                Процедура считаете более гуманной, чем клеймение.
+              </p>
+              <p>
+                Стоимость процедуры: <span class="text-gray">1000 рублей</span>
+              </p>
+            </div>
+            <div class="grid-col-5 grid-col-lg-12">
+              <picture class="article__picture d-block mye-lg-22 mye-md-12" data-da=".article__picture--transfer,992,first">
+                <source media="(max-width: 992px)" srcset="./img/background/articles/article-mobile-1.webp" type="image/webp">
+                <source media="(max-width: 992px)" srcset="./img/background/articles/article-mobile-1.png" type="image/png">
+                <source srcset="./img/background/articles/article-1.webp" type="image/webp">
+                <img loading="lazy" src="./img/background/articles/article-1.png" class="article__picture-image image" width="480" height="600"
+                  alt="Картинка">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="graph-modal">
+      <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-signin">
+        <div class="graph-modal__content">
+          <button class="btn js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+            <span class="icon">
+              <svg>
+                <use xlink:href="img/icons/close.svg#svg-close"></use>
+              </svg>
+            </span>
+          </button>
+          <div class="graph-modal__header">
+            <picture class="graph-modal__picture">
+              <source srcset="./img/modals/modals-1.webp" type="image/webp">
+              <img loading="lazy" src="./img/modals/modals-1.jpg" class="graph-modal__image image" width="450"
+                height="200" alt="Картинка">
+            </picture>
+
+            <h3 class="graph-modal__title">
+              Авторизация
+            </h3>
+          </div>
+          <div class="graph-modal__body">
+            <form class="graph-modal__form">
+              <div class="wrapper-field">
+                <h4 class="wrapper-field__title">
+                  Номер телефона
+                </h4>
+                <input type="tel" name="tel" class="input wrapper-field__input" required>
+              </div>
+              <div class="graph-modal__form-buttons">
+                <button type="submit" class="btn btn-primary graph-modal__form-btn">
+                  получить код
+                </button>
+                <button type="button" class="btn btn-outline-secondary graph-modal__form-btn">
+                  войти с паролем
+                </button>
+              </div>
+            </form>
+
+            <ul class="list-reset other-signin__list">
+              <li class="other-signin__item">
+                <button type="button" class="btn other-signin__btn">
+                  Войти с помощью Tinkoff
+                  <picture>
+                    <source srcset="./img/modals/other-sign-1.webp" type="image/webp">
+                    <img loading="lazy" src="./img/modals/other-sign-1.png" class="other-signin__image" width="30"
+                      height="30" alt="Картинка">
+                  </picture>
+                </button>
+              </li>
+              <li class="other-signin__item">
+                <button type="button" class="btn other-signin__btn">
+                  Войти с помощью Google
+                  <picture>
+                    <source srcset="./img/modals/other-sign-2.webp" type="image/webp">
+                    <img loading="lazy" src="./img/modals/other-sign-2.png" class="other-signin__image" width="30"
+                      height="30" alt="Картинка">
+                  </picture>
+                </button>
+              </li>
+              <li class="other-signin__item">
+                <button type="button" class="btn other-signin__btn">
+                  Войти с помощью VK
+                  <picture>
+                    <source srcset="./img/modals/other-sign-3.webp" type="image/webp">
+                    <img loading="lazy" src="./img/modals/other-sign-3.png" class="other-signin__image" width="30"
+                      height="30" alt="Картинка">
+                  </picture>
+                </button>
+              </li>
+              <li class="other-signin__item">
+                <button type="button" class="btn other-signin__btn">
+                  Войти с помощью Яндекс
+                  <picture>
+                    <source srcset="./img/modals/other-sign-4.webp" type="image/webp">
+                    <img loading="lazy" src="./img/modals/other-sign-4.png" class="other-signin__image" width="30"
+                      height="30" alt="Картинка">
+                  </picture>
+                </button>
+              </li>
+            </ul>
+
+            <div class="signin-change">
+              Все еще нет акаунта?
+              <button type="button" class="btn signin-change__btn" data-graph-path="modal-signup">
+                Зарегистрируйтесь
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-signup">
+        <div class="graph-modal__content">
+          <button class="btn js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+            <span class="icon">
+              <svg>
+                <use xlink:href="img/icons/close.svg#svg-close"></use>
+              </svg>
+            </span>
+          </button>
+          <div class="graph-modal__header">
+            <picture class="graph-modal__picture">
+              <source srcset="./img/modals/modals-1.webp" type="image/webp">
+              <img loading="lazy" src="./img/modals/modals-1.jpg" class="graph-modal__image image" width="450"
+                height="200" alt="Картинка">
+            </picture>
+
+            <h3 class="graph-modal__title">
+              Регистрация
+            </h3>
+          </div>
+          <div class="graph-modal__body">
+            <form class="graph-modal__form">
+              <div class="wrapper-field">
+                <h4 class="wrapper-field__title">
+                  Номер телефона
+                </h4>
+                <input type="tel" name="tel" class="input wrapper-field__input" required>
+              </div>
+              <div class="wrapper-field">
+                <h4 class="wrapper-field__title">
+                  Имя
+                </h4>
+                <input type="text" name="name" class="input wrapper-field__input" required>
+              </div>
+              <div class="wrapper-field">
+                <h4 class="wrapper-field__title">
+                  Фамилия
+                </h4>
+                <input type="text" name="surname" class="input wrapper-field__input" required>
+              </div>
+              <div class="wrapper-field">
+                <h4 class="wrapper-field__title">
+                  Email
+                </h4>
+                <input type="email" name="email" class="input wrapper-field__input" required>
+              </div>
+              <div class="graph-modal__form-buttons">
+                <button type="submit" class="btn btn-primary graph-modal__form-btn">
+                  зарегистрироваться
+                </button>
+              </div>
+            </form>
+
+            <div class="signin-change">
+              Уже зарегистрированы?
+              <button type="button" class="btn signin-change__btn" data-graph-path="modal-signin">
+                Войти
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-recovery">
+        <div class="graph-modal__content">
+          <button class="btn js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+            <span class="icon">
+              <svg>
+                <use xlink:href="img/icons/close.svg#svg-close"></use>
+              </svg>
+            </span>
+          </button>
+          <div class="graph-modal__header">
+            <picture class="graph-modal__picture">
+              <source srcset="./img/modals/modals-1.webp" type="image/webp">
+              <img loading="lazy" src="./img/modals/modals-1.jpg" class="graph-modal__image image" width="450"
+                height="200" alt="Картинка">
+            </picture>
+
+            <h3 class="graph-modal__title">
+              Восстановление пароля
+            </h3>
+          </div>
+          <div class="graph-modal__body">
+            <form class="graph-modal__form">
+              <div class="wrapper-field">
+                <h4 class="wrapper-field__title">
+                  Номер телефона
+                </h4>
+                <input type="tel" name="tel" class="input wrapper-field__input" required>
+              </div>
+              <div class="graph-modal__form-buttons">
+                <button type="submit" class="btn btn-primary graph-modal__form-btn">
+                  отправить
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

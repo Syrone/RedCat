@@ -1,3 +1,5 @@
+$offset: 42;
+
 .m-a {
   margin: auto;
 }
@@ -26,7 +28,7 @@
   margin-inline-end: auto;
 }
 
-@for $i from 0 through 40 {
+@for $i from 0 through $offset {
   .m-#{$i} {
     margin: var(--offset-#{$i}) !important;
   }
@@ -115,7 +117,7 @@
     margin-inline-end: auto;
   }
 
-	@for $i from 0 through 40 {
+	@for $i from 0 through $offset {
 		.m-xxl-#{$i} {
 			margin: var(--offset-#{$i}) !important;
 		}
@@ -206,7 +208,7 @@
     margin-inline-end: auto;
   }
 
-	@for $i from 0 through 40 {
+	@for $i from 0 through $offset {
 		.m-xl-#{$i} {
 			margin: var(--offset-#{$i}) !important;
 		}
@@ -297,7 +299,7 @@
     margin-inline-end: auto;
   }
 
-	@for $i from 0 through 40 {
+	@for $i from 0 through $offset {
 		.m-lg-#{$i} {
 			margin: var(--offset-#{$i}) !important;
 		}
@@ -388,7 +390,7 @@
     margin-inline-end: auto;
   }
 
-	@for $i from 0 through 40 {
+	@for $i from 0 through $offset {
 		.m-md-#{$i} {
 			margin: var(--offset-#{$i}) !important;
 		}
@@ -479,7 +481,7 @@
     margin-inline-end: auto;
   }
 
-	@for $i from 0 through 40 {
+	@for $i from 0 through $offset {
 		.m-sm-#{$i} {
 			margin: var(--offset-#{$i}) !important;
 		}
@@ -570,7 +572,7 @@
     margin-inline-end: auto;
   }
 
-  @for $i from 0 through 40 {
+  @for $i from 0 through $offset {
 		.m-xs-#{$i} {
 			margin: var(--offset-#{$i}) !important;
 		}

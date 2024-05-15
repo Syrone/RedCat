@@ -6,12 +6,12 @@
 
 // подключения компонентов страницы
 @import "./components/typography";
+@import "./components/icons";
+@import "./components/buttons";
 @import "./components/sections";
 @import "./components/display";
 @import "./components/offset";
 @import "./components/text";
-@import "./components/icons";
-@import "./components/buttons";
 @import "./components/color";
 @import "./components/background";
 @import "./components/swipers";
@@ -27,6 +27,12 @@
 @import "./components/card";
 @import "./components/pagination";
 @import "./components/list";
+@import "./components/table";
+@import "./components/tabs";
+@import "./components/video";
+@import "./components/accordion";
+@import "./components/counter";
+@import "./components/review";
 @import "./components/grid";
 @import "./components/header";
 @import "./components/banners";
@@ -39,5 +45,15 @@
 @import "./components/promotional";
 @import "./components/account";
 @import "./components/reward";
+@import "./components/widget";
+@import "./components/vacancies";
+@import "./components/store";
+@import "./components/map";
+@import "./components/article";
+@import "./components/client";
+@import "./components/become";
+@import "./components/product";
+@import "./components/ads";
+@import "./components/cart";
 @import "./components/footer";
 @import "./components/media";

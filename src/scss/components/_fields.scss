@@ -84,6 +84,16 @@
 	}
 }
 
+.select-outline-primary {
+	--select-color: var(--primary-color);
+	--select-background: transparent;
+	--select-border: 1px solid var(--primary-color);
+
+	~ .select-arrow {
+		--_i-color: var(--primary-color);
+	}
+}
+
 .select-arrow {
 	--_i-size: .75rem;
 	--_i-color: var(--light-color);

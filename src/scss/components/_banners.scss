@@ -40,6 +40,10 @@
 		justify-content: flex-start;
 		gap: 1rem;
 		padding-block: 7.5rem 4rem;
+
+		&--list {
+			max-width: 45.5rem;
+		}
 	}
 
 	&__title {
@@ -62,6 +66,15 @@
 		font-size: 1.5rem;
 		color: var(--gray-color);
 		margin-block-end: .5rem;
+
+		&--p {
+			margin-top: 0;
+			margin-bottom: 0;
+
+			&:last-of-type {
+				margin-bottom: 2rem;
+			}
+		}
 	}
 
 	&__picture {
@@ -81,6 +94,26 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
+	}
+
+	&__list {
+		display: grid;
+		gap: 1rem;
+
+		&-icon {
+			--_i-size: 3.5rem;
+			flex-shrink: 0;
+		}
+
+		&-item {
+			display: flex;
+			align-items: center;
+			gap: 1.25rem;
+		}
+
+		&-text {
+			color: var(--gray-color);
+		}
 	}
 
 }
