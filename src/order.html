@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <h1 class="visually-hidden">
+    Оформление заказа
+  </h1>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="section-main mye-xl-32">
+        <div class="container section-main__inner">
+          <div class="section-header cart-header">
+            <h2 class="section-title cart-title">
+              Оформление заказа
+            </h2>
+          </div>
+          <div class="grid-row grid-gap-5 grid-gap-y-md-0 grid-gap-x-md-12">
+            <div class="grid-col-9 grid-col-xl-8 grid-col-lg-7 grid-col-md-12">
+              <div class="order">
+                <h3 class="order__title">
+                  Способ доставки
+                </h3>
+                <label class="custom-checkbox custom-checkbox--radio">
+                  <div class="custom-checkbox__wrapper">
+                    <input type="radio" class="custom-checkbox__field" name="delivery" required="">
+                    <span class="custom-checkbox__checked"></span>
+                  </div>
+                  <span class="custom-checkbox__content">
+                    <span class="custom-checkbox__content-start">
+                      <h4 class="custom-checkbox__content-title">
+                        Самовывоз
+                      </h4>
+                      <span class="custom-checkbox__content-name">
+                        Магазин "Рыжий кот"
+                      </span>
+                      <address class="custom-checkbox__content-address">
+                        460018, г. Оренбург, ул. Степана Разина, д. 130 (ост. «Областная больница»)
+                      </address>
+                    </span>
+                    <span class="custom-checkbox__content-end">
+                      <button type="button" class="btn custom-checkbox__content-change">
+                        изменить
+                      </button>
+                    </span>
+                  </span>
+                </label>
+                <label class="custom-checkbox custom-checkbox--radio">
+                  <div class="custom-checkbox__wrapper">
+                    <input type="radio" class="custom-checkbox__field" name="delivery" required="">
+                    <span class="custom-checkbox__checked"></span>
+                  </div>
+                  <span class="custom-checkbox__content">
+                    <span class="custom-checkbox__content-start">
+                      <h4 class="custom-checkbox__content-title">
+                        Курьерская доставка
+                      </h4>
+                    </span>
+                  </span>
+                </label>
+              </div>
+              <div class="order">
+                <h3 class="order__title">
+                  Способ оплаты
+                </h3>
+                <label class="custom-checkbox custom-checkbox--radio">
+                  <div class="custom-checkbox__wrapper">
+                    <input type="radio" class="custom-checkbox__field" name="payment" required="">
+                    <span class="custom-checkbox__checked"></span>
+                  </div>
+                  <span class="custom-checkbox__content">
+                    <span class="custom-checkbox__content-start">
+                      <h4 class="custom-checkbox__content-title">
+                        На сайте 
+                      </h4>
+                    </span>
+                    <span class="custom-checkbox__content-end">
+                      <button type="button" class="btn custom-checkbox__content-change">
+                        выбрать
+                      </button>
+                    </span>
+                  </span>
+                </label>
+                <label class="custom-checkbox custom-checkbox--radio">
+                  <div class="custom-checkbox__wrapper">
+                    <input type="radio" class="custom-checkbox__field" name="payment" required="">
+                    <span class="custom-checkbox__checked"></span>
+                  </div>
+                  <span class="custom-checkbox__content">
+                    <span class="custom-checkbox__content-start">
+                      <h4 class="custom-checkbox__content-title">
+                        При получении заказа
+                      </h4>
+                    </span>
+                  </span>
+                </label>
+              </div>
+              <div class="order">
+                <h3 class="order__title">
+                  Покупатель
+                </h3>
+                <div class="order__client">
+                  <div class="order__client-start">
+                    <span class="order__client-name">
+                      Иванов Иван Иванович
+                    </span>
+                    <span class="order__client-tel">
+                      +7 958 832 88-88
+                    </span>
+                  </div>
+                  <div class="order__client-end">
+                    <button type="button" class="btn order__client-change">
+                      изменить
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="order">
+                <h3 class="order__title">
+                  Товар в заказе
+                </h3>
+                <article class="card card--cart card--cart-v2">
+                  <div class="card__pictures">
+                    <a href="./card.html" class="card__link"></a>
+                    <input type="checkbox" class="card__checkbox">
+                    <picture>
+                      <source srcset="./img/card/card-1.webp" type="image/webp">
+                      <img loading="lazy" src="./img/card/card-1.png" class="card__pictures-image image" width="" height="" alt="">
+                    </picture>
+                  </div>
+                  <div class="card__info">
+                    <div class="card__info-start">
+                      <h3 class="card__title">
+                        Корм для кошек Royal Canin Protein Exigent
+                      </h3>
+                      <span class="card__weight">
+                        Вес: 2 кг
+                      </span>
+                    </div>
+                
+                    <div class="card__info-end">
+                      <span class="card__price">
+                        2 393₽
+                      </span>
+                      <span class="card__current">
+                        1 шт
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="grid-col-3 grid-col-xl-4 grid-col-lg-5 grid-col-md-12">
+              <div class="cart__aside">
+                <h3 class="cart__aside-title">
+                  Сумма заказа:
+                </h3>
+
+                <ul class="list-reset cart__aside-list">
+                  <li class="cart__aside-item">
+                    <span class="cart__aside-name">
+                      1 товар
+                    </span>
+                    <span class="cart__aside-value">
+                      3 499₽ 
+                    </span>
+                  </li>
+                  <li class="cart__aside-item">
+                    <span class="cart__aside-name text-gray">
+                      Вес: 2 кг
+                    </span>
+                  </li>
+                  <li class="cart__aside-item">
+                    <span class="cart__aside-name">
+                      Скидка
+                    </span>
+                    <span class="cart__aside-value">
+                      - 1 106₽
+                    </span>
+                  </li>
+                  <li class="cart__aside-item">
+                    <span class="cart__aside-name">
+                      Бонусы
+                    </span>
+                    <span class="cart__aside-value">
+                      +10.67₽
+                    </span>
+                  </li>
+                  <li class="cart__aside-item">
+                    <span class="cart__aside-name">
+                      Добавить пакет :
+                    </span>
+                    <label class="cart__aside-checkbox custom-checkbox">
+                      <div class="custom-checkbox__wrapper">
+                        <input type="checkbox" class="custom-checkbox__field" checked="" required="">
+                        <span class="custom-checkbox__checked"></span>
+                      </div>
+                    </label>
+                  </li>
+                  <li class="cart__aside-finally">
+                    <span class="cart__aside-name">
+                      Итого:
+                    </span>
+                    <span class="cart__aside-value">
+                      2 393₽
+                    </span>
+                  </li>
+                </ul>
+
+                <button type="button" class="btn btn-primary cart__aside-btn">
+                  Оформить заказ
+                </button>
+
+                <div class="cart__bonus">
+                  <div class="cart__bonus-inner">
+                    <h4 class="cart__bonus-title">
+                      Бонусная карта:
+                    </h4>
+                    <ul class="list-reset cart__bonus-list">
+                      <li class="cart__bonus-item">
+                        <span class="cart__bonus-name">
+                          У вас:
+                        </span>
+                        <span class="cart__bonus-value">
+                          0 ₽
+                        </span>
+                      </li>
+                      <li class="cart__bonus-item">
+                        <span class="cart__bonus-name">
+                          Начислится:
+                        </span>
+                        <span class="cart__bonus-value">
+                          +10.67₽
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="cart__bonus-hint">
+                    Нет карты? <a href="#" class="btn btn-inherit text-underline cart__bonus-link">оформить</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/modals.html')
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

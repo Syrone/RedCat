@@ -178,3 +178,18 @@
 		}
 	}
 }
+
+.swiper-video {
+	padding-inline: 4rem;
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.swiper-button-prev {
+		right: auto;
+		left: 0;
+	}
+}

@@ -1,6 +1,6 @@
 $grid-columns: 12;
 $offset: 42;
-$orders: 5;
+$orders: 6;
 
 $breakpoints: (
   xxl: 1400px,
@@ -92,7 +92,7 @@ $align-items-values: (
   }
 }
 
-@for $i from 1 through $orders {
+@for $i from -6 through $orders {
   .order-#{$i} {
     order: $i !important;
   }
@@ -142,7 +142,7 @@ $align-items-values: (
       }
     }
     
-    @for $i from 1 through $orders {
+    @for $i from -6 through $orders {
       .order-#{$bp}-#{$i} {
         order: $i !important;
       }

@@ -251,7 +251,7 @@
                     <span class="card__price">
                       ОТ XX XXX ₽
                     </span>
-                    <button type="button" class="btn btn-primary card__buttons-cart">
+                    <button type="button" class="btn btn-primary card__buttons-cart" data-graph-path="modal-vac">
                       заполнить анкету
                     </button>
                   </div>
@@ -371,7 +371,7 @@
                     <span class="card__price">
                       ОТ XX XXX ₽
                     </span>
-                    <button type="button" class="btn btn-primary card__buttons-cart">
+                    <button type="button" class="btn btn-primary card__buttons-cart" data-graph-path="modal-vac">
                       заполнить анкету
                     </button>
                   </div>
@@ -495,7 +495,7 @@
                     <span class="card__price">
                       ОТ XX XXX ₽
                     </span>
-                    <button type="button" class="btn btn-primary card__buttons-cart">
+                    <button type="button" class="btn btn-primary card__buttons-cart" data-graph-path="modal-vac">
                       заполнить анкету
                     </button>
                   </div>
@@ -619,7 +619,7 @@
                     <span class="card__price">
                       ОТ XX XXX ₽
                     </span>
-                    <button type="button" class="btn btn-primary card__buttons-cart">
+                    <button type="button" class="btn btn-primary card__buttons-cart" data-graph-path="modal-vac">
                       заполнить анкету
                     </button>
                   </div>
@@ -745,7 +745,7 @@
                     <span class="card__price">
                       ОТ XX XXX ₽
                     </span>
-                    <button type="button" class="btn btn-primary card__buttons-cart">
+                    <button type="button" class="btn btn-primary card__buttons-cart" data-graph-path="modal-vac">
                       заполнить анкету
                     </button>
                   </div>
@@ -756,201 +756,7 @@
         </div>
       </section>
     </main>
-
-    <div class="graph-modal">
-      <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-signin">
-        <div class="graph-modal__content">
-          <button class="btn js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
-            <span class="icon">
-              <svg>
-                <use xlink:href="img/icons/close.svg#svg-close"></use>
-              </svg>
-            </span>
-          </button>
-          <div class="graph-modal__header">
-            <picture class="graph-modal__picture">
-              <source srcset="./img/modals/modals-1.webp" type="image/webp">
-              <img loading="lazy" src="./img/modals/modals-1.jpg" class="graph-modal__image image" width="450"
-                height="200" alt="Картинка">
-            </picture>
-
-            <h3 class="graph-modal__title">
-              Авторизация
-            </h3>
-          </div>
-          <div class="graph-modal__body">
-            <form class="graph-modal__form">
-              <div class="wrapper-field">
-                <h4 class="wrapper-field__title">
-                  Номер телефона
-                </h4>
-                <input type="tel" name="tel" class="input wrapper-field__input" required>
-              </div>
-              <div class="graph-modal__form-buttons">
-                <button type="submit" class="btn btn-primary graph-modal__form-btn">
-                  получить код
-                </button>
-                <button type="button" class="btn btn-outline-secondary graph-modal__form-btn">
-                  войти с паролем
-                </button>
-              </div>
-            </form>
-
-            <ul class="list-reset other-signin__list">
-              <li class="other-signin__item">
-                <button type="button" class="btn other-signin__btn">
-                  Войти с помощью Tinkoff
-                  <picture>
-                    <source srcset="./img/modals/other-sign-1.webp" type="image/webp">
-                    <img loading="lazy" src="./img/modals/other-sign-1.png" class="other-signin__image" width="30"
-                      height="30" alt="Картинка">
-                  </picture>
-                </button>
-              </li>
-              <li class="other-signin__item">
-                <button type="button" class="btn other-signin__btn">
-                  Войти с помощью Google
-                  <picture>
-                    <source srcset="./img/modals/other-sign-2.webp" type="image/webp">
-                    <img loading="lazy" src="./img/modals/other-sign-2.png" class="other-signin__image" width="30"
-                      height="30" alt="Картинка">
-                  </picture>
-                </button>
-              </li>
-              <li class="other-signin__item">
-                <button type="button" class="btn other-signin__btn">
-                  Войти с помощью VK
-                  <picture>
-                    <source srcset="./img/modals/other-sign-3.webp" type="image/webp">
-                    <img loading="lazy" src="./img/modals/other-sign-3.png" class="other-signin__image" width="30"
-                      height="30" alt="Картинка">
-                  </picture>
-                </button>
-              </li>
-              <li class="other-signin__item">
-                <button type="button" class="btn other-signin__btn">
-                  Войти с помощью Яндекс
-                  <picture>
-                    <source srcset="./img/modals/other-sign-4.webp" type="image/webp">
-                    <img loading="lazy" src="./img/modals/other-sign-4.png" class="other-signin__image" width="30"
-                      height="30" alt="Картинка">
-                  </picture>
-                </button>
-              </li>
-            </ul>
-
-            <div class="signin-change">
-              Все еще нет акаунта?
-              <button type="button" class="btn signin-change__btn" data-graph-path="modal-signup">
-                Зарегистрируйтесь
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-signup">
-        <div class="graph-modal__content">
-          <button class="btn js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
-            <span class="icon">
-              <svg>
-                <use xlink:href="img/icons/close.svg#svg-close"></use>
-              </svg>
-            </span>
-          </button>
-          <div class="graph-modal__header">
-            <picture class="graph-modal__picture">
-              <source srcset="./img/modals/modals-1.webp" type="image/webp">
-              <img loading="lazy" src="./img/modals/modals-1.jpg" class="graph-modal__image image" width="450"
-                height="200" alt="Картинка">
-            </picture>
-
-            <h3 class="graph-modal__title">
-              Регистрация
-            </h3>
-          </div>
-          <div class="graph-modal__body">
-            <form class="graph-modal__form">
-              <div class="wrapper-field">
-                <h4 class="wrapper-field__title">
-                  Номер телефона
-                </h4>
-                <input type="tel" name="tel" class="input wrapper-field__input" required>
-              </div>
-              <div class="wrapper-field">
-                <h4 class="wrapper-field__title">
-                  Имя
-                </h4>
-                <input type="text" name="name" class="input wrapper-field__input" required>
-              </div>
-              <div class="wrapper-field">
-                <h4 class="wrapper-field__title">
-                  Фамилия
-                </h4>
-                <input type="text" name="surname" class="input wrapper-field__input" required>
-              </div>
-              <div class="wrapper-field">
-                <h4 class="wrapper-field__title">
-                  Email
-                </h4>
-                <input type="email" name="email" class="input wrapper-field__input" required>
-              </div>
-              <div class="graph-modal__form-buttons">
-                <button type="submit" class="btn btn-primary graph-modal__form-btn">
-                  зарегистрироваться
-                </button>
-              </div>
-            </form>
-
-            <div class="signin-change">
-              Уже зарегистрированы?
-              <button type="button" class="btn signin-change__btn" data-graph-path="modal-signin">
-                Войти
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-recovery">
-        <div class="graph-modal__content">
-          <button class="btn js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
-            <span class="icon">
-              <svg>
-                <use xlink:href="img/icons/close.svg#svg-close"></use>
-              </svg>
-            </span>
-          </button>
-          <div class="graph-modal__header">
-            <picture class="graph-modal__picture">
-              <source srcset="./img/modals/modals-1.webp" type="image/webp">
-              <img loading="lazy" src="./img/modals/modals-1.jpg" class="graph-modal__image image" width="450"
-                height="200" alt="Картинка">
-            </picture>
-
-            <h3 class="graph-modal__title">
-              Восстановление пароля
-            </h3>
-          </div>
-          <div class="graph-modal__body">
-            <form class="graph-modal__form">
-              <div class="wrapper-field">
-                <h4 class="wrapper-field__title">
-                  Номер телефона
-                </h4>
-                <input type="tel" name="tel" class="input wrapper-field__input" required>
-              </div>
-              <div class="graph-modal__form-buttons">
-                <button type="submit" class="btn btn-primary graph-modal__form-btn">
-                  отправить
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    @include('partials/modals.html')
     @include('partials/footer.html')
   </div>
 </body>

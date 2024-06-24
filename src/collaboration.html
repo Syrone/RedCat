@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <h1 class="visually-hidden">
+    Сотрудничество
+  </h1>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="section-main section mye-xl-32">
+        <div class="container section-main__inner">
+          <div class="section-header">
+            <h2 class="section-title h2">
+              Сотрудничество
+            </h2>
+          </div>
+
+          <article class="collaboration" style="background-image: url(./img/collaboration/collaboration-decor.svg);">
+            <span class="collaboration-decor"></span>
+            <h3 class="collaboration__title">
+              Маркетинговое сотрудничество
+            </h3>
+            <p class="collaboration__text">
+              Наша сеть «Рыжий кот» одна из крупнейших в Оренбурге и включает в себя зоомагазины, груминг-салоны, ветклинику и интернет-магазин. Мы активно развиваем наш бренд и будем рады сотрудничеству с блогерами, компаниями со схожей аудиторией, организаторами мероприятий и СМИ. Наше сотрудничество мы видим в коллаборации, партнерстве, кросс-маркетинге.Также мы приглашаем владельцев и любителей домашних животных стать амбассадором бренда «Рыжий кот».
+            </p>
+            <div class="collaboration__socials">
+              Наши интернет площадки:
+              <ul class="list-reset collaboration__socials-list">
+                <li class="collaboration__socials-item">
+                  <a href="#" class="btn collaboration__socials-link">
+                    <span class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/vk.svg#svg-vk"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="collaboration__socials-item">
+                  <a href="#" class="btn collaboration__socials-link">
+                    <span class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/telegram.svg#svg-telegram"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <picture class="collaboration__picture">
+              <source srcset="./img/collaboration/picture.webp" type="image/webp">
+              <img loading="lazy" src="./img/collaboration/picture.jpg" class="collaboration__image" width="387" height="254" alt="Картинка">
+            </picture>
+            <form class="collaboration__form">
+              <h4 class="collaboration__form-title">
+                У вас есть предложение ? Заполняйте форму и мы рассмотрим его.
+              </h4>
+              <div class="grid-row grid-gap-4">
+                <div class="grid-col-6 grid-col-md-12">
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="company" placeholder="Компания" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="full-name" placeholder="ФИО" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="tel" class="input input-lg input-light input-lg-primary-25" name="tel" placeholder="Телефон" required>
+                  </div>
+                </div>
+                <div class="grid-col-6 grid-col-md-12">
+                  <div class="wrapper-field">
+                    <input type="email" class="input input-lg input-light input-lg-primary-25" name="email" placeholder="E-mail" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <textarea class="input input-lg input-light input-lg-primary-25" name="offer" placeholder="Предложение" required></textarea>
+                  </div>
+                  <label class="custom-checkbox">
+                    <div class="custom-checkbox__wrapper">
+                      <input type="checkbox" class="custom-checkbox__field" required="">
+                      <span class="custom-checkbox__checked"></span>
+                    </div>
+                    <span class="custom-checkbox__content">
+                      Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="collaboration__form-bottom">
+                <button type="submit" class="btn btn-primary">
+                  отправить
+                </button>
+              </div>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="collaboration collaboration--v2" style="background-image: url(./img/collaboration/collaboration-decor-2.svg);">
+            <span class="collaboration-decor-2"></span>
+            <form class="collaboration__form">
+              <div class="grid-row grid-gap-y-4 grid-gap-x-3">
+                <div class="grid-col-6 grid-col-md-12">
+                  <h3 class="collaboration__title">
+                    Арендодателям
+                  </h3>
+                  <p class="collaboration__text">
+                    Наша сеть развивается и растет, каждый год мы открываем новые магазины!
+                  </p>
+                  <p class="collaboration__text collaboration__text--invisible collaboration__text--visible-md">
+                    У вас есть предложение по аренде помещений в Оренбурге? Заполняйте форму и мы рассмотрим его.
+                  </p>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="name" placeholder="Имя" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="sur-name" placeholder="Фамилия" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="tel" class="input input-lg input-light input-lg-primary-25" name="tel" placeholder="Телефон" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="email" class="input input-lg input-light input-lg-primary-25" name="email" placeholder="E-mail" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="address" placeholder="Адрес помещения" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="square" placeholder="Площадь помещения" required>
+                  </div>
+                </div>
+                <div class="grid-col-6 grid-col-md-12">
+                  <h3 class="collaboration__title collaboration__title--invisible">
+                    Арендодателям
+                  </h3>
+                  <p class="collaboration__text collaboration__text--invisible-md">
+                    У вас есть предложение по аренде помещений в Оренбурге? Заполняйте форму и мы рассмотрим его.
+                  </p>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="ceiling-height" placeholder="Высота потолков" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="floor" placeholder="Этаж" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="cost" placeholder="Стоимость в месяц" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <textarea class="input input-lg input-light input-lg-primary-25" name="comment" placeholder="Комментарий" required></textarea>
+                  </div>
+                  <label class="custom-checkbox">
+                    <div class="custom-checkbox__wrapper">
+                      <input type="checkbox" class="custom-checkbox__field" required="">
+                      <span class="custom-checkbox__checked"></span>
+                    </div>
+                    <span class="custom-checkbox__content">
+                      Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="collaboration__form-bottom">
+                <button type="submit" class="btn btn-primary">
+                  отправить
+                </button>
+              </div>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="collaboration" style="background-image: url(./img/collaboration/collaboration-decor-3.svg);">
+            <h3 class="collaboration__title">
+              Поставщикам зоотоваров
+            </h3>
+            <p class="collaboration__text">
+              Мы постоянно работаем над ассортиментом зоотоваров в наших магазинах. При выборе поставщиков мы ориентируемся на качество продукции, бесперебойные поставки и совместное развитие.
+            </p>
+            <picture class="collaboration__picture">
+              <source srcset="./img/collaboration/picture-2.webp" type="image/webp">
+              <img loading="lazy" src="./img/collaboration/picture-2.jpg" class="collaboration__image" width="387" height="254" alt="Картинка">
+            </picture>
+            <form class="collaboration__form">
+              <h4 class="collaboration__form-title">
+                У вас есть предложение ? Заполняйте форму и мы рассмотрим его.
+              </h4>
+              <div class="grid-row grid-gap-4">
+                <div class="grid-col-6 grid-col-md-12">
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="company" placeholder="Компания" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="full-name" placeholder="ФИО" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="tel" class="input input-lg input-light input-lg-primary-25" name="tel" placeholder="Телефон" required>
+                  </div>
+                </div>
+                <div class="grid-col-6 grid-col-md-12">
+                  <div class="wrapper-field">
+                    <input type="email" class="input input-lg input-light input-lg-primary-25" name="email" placeholder="E-mail" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <textarea class="input input-lg input-light input-lg-primary-25" name="offer" placeholder="Предложение" required></textarea>
+                  </div>
+                  <label class="custom-checkbox">
+                    <div class="custom-checkbox__wrapper">
+                      <input type="checkbox" class="custom-checkbox__field" required="">
+                      <span class="custom-checkbox__checked"></span>
+                    </div>
+                    <span class="custom-checkbox__content">
+                      Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="collaboration__form-bottom">
+                <button type="submit" class="btn btn-primary">
+                  отправить
+                </button>
+              </div>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+    @include('partials/modals.html')
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

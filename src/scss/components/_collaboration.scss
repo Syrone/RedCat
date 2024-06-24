@@ -1,0 +1,167 @@
+.collaboration {
+	font-size: 1.25rem;
+	background-color: #FFEFDC;
+	border-radius: var(--radius-xl);
+	padding: 2.5rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	position: relative;
+
+	&-decor,
+	&-decor-2 {
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		position: absolute;
+	}
+
+	&-decor {
+		width: 6.25rem;
+		height: 6.25rem;
+		background-image: url(../img/background/svg/decoration-pattern-16.svg);
+		bottom: 0;
+		left: -5.875rem;
+	}
+
+	&-decor-2 {
+		width: 5.5rem;
+		height: 5.5rem;
+		background-image: url(../img/background/svg/decoration-pattern-17.svg);
+		top: -2.5rem;
+		right: -1.25rem;
+	}
+
+	&-decor-2 {
+
+	}
+
+	&__picture {
+		width: 24.1875rem;
+		height: 15.875rem;
+		display: block;
+		position: absolute;
+		top: -1.875rem;
+		right: -1.875rem;
+		transform: rotate(3deg);
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		display: block;
+		border-radius: var(--radius-xl);
+	}
+
+	&__title,
+	&__text {
+		padding-right: 22.5rem;
+	}
+
+	&__title {
+		margin-bottom: 1.875rem;
+
+		&--invisible {
+			opacity: 0;
+		}
+	}
+
+	&__text {
+		margin-bottom: 1.25rem;
+
+		&--invisible {
+			display: none;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: .5rem 1rem;
+		color: var(--gray-color);
+		margin-bottom: 1.5rem;
+
+		&-list {
+			display: flex;
+			align-items: center;
+			gap: .625rem;
+		}
+
+		&-link {
+			--_icon-size: 1.875rem;
+		}
+	}
+
+	&__form {
+
+		&-title {
+			font-family: var(--font-family);
+			font-size: inherit;
+			margin-bottom: 1.25rem;
+		}
+
+		.wrapper-field + .wrapper-field {
+			margin-block-start: 1rem;
+		}
+
+		.input {
+			font-size: .875rem;
+		}
+
+		textarea.input {
+			--input-height: 6rem;
+		}
+
+		.custom-checkbox {
+			align-items: flex-start;
+			gap: .375rem;
+			margin-block-start: .625rem;
+
+			&__content {
+				margin-top: .125rem;
+				font-size: var(--fs-xs);
+			}
+		}
+
+		&-bottom {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: .625rem;
+
+			.btn {
+				--_padding-x: 4rem;
+			}
+		}
+	}
+
+	&--v2 {
+
+		.collaboration__title, .collaboration__text {
+			padding-right: 0;
+		}
+
+		.collaboration__form {
+			textarea.input {
+				--input-height: 9.5rem;
+			}
+		}
+
+	}
+
+	&--v3 {
+		.collaboration-decor {
+			width: 5.625rem;
+			height: 5.625rem;
+			background-image: url(../img/announcement/decoration-span.svg);
+			left: -3.125rem;
+			bottom: -1.875rem;
+		}
+
+		.collaboration__form {
+			textarea.input {
+				--input-height: 7.5rem;
+			}
+		}
+	}
+}

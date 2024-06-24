@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <h1 class="visually-hidden">
+    Акция
+  </h1>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="section-main background-primary-25">
+        <div class="container--banner">
+          <div class="banner-main banner-main--blob" style="
+              --banner-image: url('../img/background/svg/decoration-pattern-image-2.svg');
+              --banner-image--mobile: url('../img/background/svg/decoration-pattern-image-mobile-2.svg');
+            ">
+            <div class="banner-main__inner">
+              <div class="container">
+                <div class="banner-main__info banner-main__info--v2">
+                  <h2 class="h3 banner-main__title banner-main__title--v2">
+                    <span class="banner-main__title_primary">Более 20 лет</span> мы заботимся
+                    о ваших питомцах,
+                    а вы доверяете нам
+                  </h2>
+                  <p class="banner-main__text banner-main__text--v2">
+                    Наша компания имеет долголетние семейные традиции.
+                    Мы считаем каждого клиента частью нашей большой дружной семьи и радушно встречаем в нашей сети.
+                    Ценим ваше доверие и делаем все возможное, чтобы ваш питомец был здоровым, счастливым и полным
+                    энергии
+                  </p>
+                </div>
+                <picture class="banner-main__picture banner-main__picture--v2">
+                  <source srcset="./img/background/banners/banner-image-2.webp" type="image/webp">
+                  <img loading="lazy" src="./img/background/banners/banner-image-2.png" class="banner-main__image image"
+                    width="817" height="544" alt="Фото">
+                </picture>
+              </div>
+              <div class="banner-main__decoration"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-crossing">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title section-title--v2">
+              Сегодня компания «Рыжий кот» - это
+            </h2>
+          </div>
+
+          <div class="grid-row grid-gap-4 grid-gap-md-3">
+            <div class="h-100 grid-col-6 grid-col-md-12">
+              <div class="grid-row grid-gap-4 grid-gap-md-3">
+                <div class="grid-col-6 grid-col-sm-12">
+                  <div class="company-item">
+                    <span class="company-item__current">
+                      10
+                    </span>
+                    <span class="company-item__name">
+                      зоомагазинов
+                    </span>
+                  </div>
+                </div>
+                <div class="grid-col-6 grid-col-sm-12">
+                  <div class="company-item">
+                    <span class="company-item__current">
+                      1
+                    </span>
+                    <span class="company-item__name">
+                      интернет-магазин
+                    </span>
+                  </div>
+                </div>
+                <div class="grid-col-6 grid-col-sm-12">
+                  <div class="company-item">
+                    <span class="company-item__current">
+                      1
+                    </span>
+                    <span class="company-item__name">
+                      большая современная ветклиника
+                    </span>
+                  </div>
+                </div>
+                <div class="grid-col-6 grid-col-sm-12">
+                  <div class="company-item">
+                    <span class="company-item__current">
+                      3
+                    </span>
+                    <span class="company-item__name">
+                      груминг-салона
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="h-100 grid-col-6 grid-col-md-12">
+              <div class="company-item company-item--main" style="background-image: url(./img/about/about-1.webp);">
+                <p class="company-item__text">
+                  Наша гордость — первый Зооцентр в Оренбурге, объединивший в себе магазин, ветклинику и груминг на
+                  одной площадке
+                </p>
+
+                <p class="company-item__message">
+                  Всегда с нетерпением ждем вас в наших заведениях !
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title section-title--v2">
+              Наш главный принцип - предоставление товаров высокого качества и отличный сервис
+            </h2>
+          </div>
+
+          <div class="grid-row grid-gap-4 grid-gap-md-3">
+            <div class="grid-col-7 grid-col-lg-12">
+              <div class="grid-row grid-gap-4 grid-gap-md-3">
+                <div class="grid-col-6 grid-col-sm-12 tenet-item">
+                  <span class="tenet-item__current">
+                    01
+                  </span>
+                  <p class="tenet-item__text">
+                    Мы тщательно отбираем продукцию, чтобы предложить вам только самое лучшее для вашего питомца.
+                    Работаем только с проверенными поставщиками и производителями
+                  </p>
+                </div>
+                <div class="grid-col-6 grid-col-sm-12 tenet-item">
+                  <span class="tenet-item__current">
+                    02
+                  </span>
+                  <p class="tenet-item__text">
+                    У нас вы найдете широкий ассортимент товаров для всех видов животных - от кормов и аксессуаров до
+                    игрушек и средств по уходу
+                  </p>
+                </div>
+                <div class="grid-col-6 grid-col-sm-12 tenet-item">
+                  <span class="tenet-item__current">
+                    03
+                  </span>
+                  <p class="tenet-item__text">
+                    Мы имеем лицензию — официальное разрешение на продажу ветпрепаратов, а это значит, что вы можете
+                    быть уверены в качестве.
+                  </p>
+                </div>
+                <div class="grid-col-6 grid-col-sm-12 tenet-item">
+                  <span class="tenet-item__current">
+                    04
+                  </span>
+                  <p class="tenet-item__text">
+                    Наши консультанты имеют ветеринарное образование, всегда готовы помочь вам с выбором и ответить на
+                    все ваши вопросы
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-col-5 d-lg-none">
+              <div class="tenet-item__bg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title section-title--v2">
+              Мы делаем покупки в "Рыжем коте" удобными, быстрыми  и выгодными. У нас есть:
+            </h2>
+          </div>
+
+          <div class="grid-row grid-gap-22 grid-gap-md-12 grid-gap-y-md-0">
+            <div class="grid-col-6 grid-col-md-12">
+              <article class="have-item">
+                <img loading="lazy" src="./img/images/care-service.svg" class="have-item__image" width="56" height="56" alt="Иконка">
+                <div class="have-item__content">
+                  <h3 class="have-item__title">
+                    Служба заботы
+                  </h3>
+                  <p class="have-item__text">
+                    Персональный менеджер будет отслеживать, когда заканчивается корм у вашего питомца, вовремя напомнит
+                    вам и сделает заказ. Он также готов проконсультировать вас по всем вопросам
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="grid-col-6 grid-col-md-12">
+              <article class="have-item">
+                <img loading="lazy" src="./img/images/bonus.svg" class="have-item__image" width="56" height="56"
+                  alt="Иконка">
+                <div class="have-item__content">
+                  <h3 class="have-item__title">
+                    Бонусная программа для постояных клиентов
+                  </h3>
+                  <p class="have-item__text">
+                    Мы ценим вашу лояльность и предлагаем специальные бонусы и скидки для наших постоянных клиентов. Это
+                    наш способ поблагодарить вас за выбор "Рыжего кота"
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="grid-col-6 grid-col-md-12">
+              <article class="have-item">
+                <img loading="lazy" src="./img/images/auto-order.svg" class="have-item__image" width="56" height="56"
+                  alt="Иконка">
+                <div class="have-item__content">
+                  <h3 class="have-item__title">
+                    Автозаказ на сайте
+                  </h3>
+                  <p class="have-item__text">
+                    Вы можете составить список регулярных покупок и указать периодичность. Таким образом, вы сможете автоматически получать необходимые товары без лишних хлопот
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="grid-col-6 grid-col-md-12">
+              <article class="have-item">
+                <img loading="lazy" src="./img/images/fast-delivery.svg" class="have-item__image" width="56" height="56"
+                  alt="Иконка">
+                <div class="have-item__content">
+                  <h3 class="have-item__title">
+                    Быстрая доставка и самовывоз
+                  </h3>
+                  <p class="have-item__text">
+                    Мы оперативно доставим ваш заказ прямо к вам домой. Также у вас есть возможность самостоятельно забрать товар в любом удобном магазине нашей сети
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title section-title--v2">
+              История
+            </h2>
+          </div>
+
+          <div class="grid-row grid-gap-4 grid-gap-md-3">
+            <div class="grid-col-4 grid-col-md-12 order-md--2">
+              <div class="history-item">
+                <span class="history-item__name">
+                  2004 год
+                </span>
+                <p class="history-item__text">
+                  Началась наша история, когда мы открыли наш 1-й магазин в Оренбурге по адресу Степана Разина 130. Из небольшого магазина он превратился в один из флагманских магазинов нашей сети.
+                </p>
+              </div>
+            </div>
+            <div class="grid-col-4 grid-col-md-12">
+              <div class="history-item history-item--v2">
+                <span class="history-item__name">
+                  2009 год
+                </span>
+                <p class="history-item__text">
+                  Мы запустили интернет-магазин и начали осуществлять продажи не только в Оренбурге, но и в области и за ее пределами
+                </p>
+              </div>
+            </div>
+            <div class="grid-col-4 grid-col-md-12 order-md--1">
+              <div class="history-item history-item--bg history-item--bg-md-decor" style="background-image: url(./img/about/about-3.webp);"></div>
+            </div>
+            <div class="grid-col-4 grid-col-md-12 d-md-flex justify-content-end">
+              <div class="history-item history-item--v2">
+                <span class="history-item__name">
+                  2013 год
+                </span>
+                <p class="history-item__text">
+                  Мы активно росли и открыли  3-й магазин в Оренбурге, чтобы быть ближе в нашим клиентам
+                </p>
+              </div>
+            </div>
+            <div class="grid-col-4 grid-col-md-12">
+              <div class="history-item history-item--v2 history-item--decor">
+                <span class="history-item__name">
+                  2015 год
+                </span>
+                <p class="history-item__text">
+                  Открыли первый <br> груминг-салон
+                </p>
+              </div>
+            </div>
+            <div class="grid-col-4 grid-col-md-12 d-md-flex justify-content-end">
+              <div class="history-item history-item--v2">
+                <span class="history-item__name">
+                  2019 год
+                </span>
+                <p class="history-item__text">
+                  Открыли веткабинет и начали предоставлять полный комплекс услуг для животных. Расширили нашу сеть, открыв 6-й магазин  и 2-й груминг-салон
+                </p>
+              </div>
+            </div>
+            <div class="grid-col-4 grid-col-md-12 d-md-none">
+              <div class="history-item history-item--bg" style="background-image: url(./img/about/about-4.webp);"></div>
+            </div>
+            <div class="grid-col-4 grid-col-md-12">
+              <div class="history-item history-item--v2">
+                <span class="history-item__name">
+                  2023 год
+                </span>
+                <p class="history-item__text">
+                  Стал годом больших открытий для нас. Мы открыли 10-й магазин, большую современную ветеринарную клинику и груминг-салон на одной площадке, создав Зооцентр. Это стало новым этапом в нашей истории
+                </p>
+              </div>
+            </div>
+            <div class="grid-col-4 grid-col-md-12">
+              <div class="history-item history-item--main">
+                <img loading="lazy" src="./img/icons/paw.svg" class="history-item__image" width="44" height="44" alt="Иконка">
+                <picture>
+                  <source srcset="./img/about/about-4.webp" type="image/webp">
+                  <img loading="lazy" src="./img/about/about-4.jpg" class="history-item__image history-item__image--v2 d-none d-md-block" width="155" height="90" alt="Картинка">
+                </picture>
+                <p class="history-item__text">
+                  На протяжении всей нашей истории неизменным для нас остается соблюдение принципов работы и наши рыжие коты. С самого начала в нашей компании живут настоящие рыжие коты. Они стали символом нашей преданности заботе о питомцах
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="banner-about" style="
+            --banner-bg: url(../img/background/banners/banner-11.webp);
+            --banner-bg--mobile: url(../img/background/banners/banner-mobile-12.webp);
+            --banner-blob: url(../img/background/svg/blob-11.svg);
+            --banner-blob--mobile: url(../img/background/svg/blob-mobile-11.svg);
+            ">
+            <h2 class="section-title section-title--v2 banner-about__title">
+              В 2023 году появился я -  Рыжебок
+            </h2>
+
+            <div class="banner-about__content">
+              <p class="banner-about__text">
+                Как и мои коллеги я очень ответственно отношусь к своим обязанностям, а их у меня не мало.
+              </p>
+              <p class="banner-about__text">
+                Я - собиратель лайков и отвечаю за то, чтобы вам понравился «Рыжий кот».
+              </p>
+              <p class="banner-about__text">
+                Также я  активно участвую в обучающих мероприятиях для детей и взрослых, помогая компании выполнять свою миссию - заботиться о качестве жизни и здоровья питомцев, повышая культуру их содержания.
+              </p>
+            </div>
+
+            <picture class="banner-about__picture">
+              <source srcset="./img/about/about-5.webp" type="image/webp">
+              <img loading="lazy" src="./img/about/about-5.jpg" class="banner-about__image" width="387" height="254" alt="Картинка">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header d-none d-md-flex">
+            <h2 class="section-title section-title--v2">
+              Также о нас:
+            </h2>
+          </div>
+
+          <div class="wrapper-swiper swiper-video">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="wrapper-video js-video">
+                    <span class="icon video-play">
+                      <svg>
+                        <use xlink:href="img/icons/play.svg#svg-play"></use>
+                      </svg>
+                    </span>
+                    <!-- Если понадобиться задний фон, то вставь в video - poster="./путь_к_фону" -->
+                    <video src=""></video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="wrapper-video js-video">
+                    <span class="icon video-play">
+                      <svg>
+                        <use xlink:href="img/icons/play.svg#svg-play"></use>
+                      </svg>
+                    </span>
+                    <!-- Если понадобиться задний фон, то вставь в video - poster="./путь_к_фону" -->
+                    <video src=""></video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="wrapper-video js-video">
+                    <span class="icon video-play">
+                      <svg>
+                        <use xlink:href="img/icons/play.svg#svg-play"></use>
+                      </svg>
+                    </span>
+                    <!-- Если понадобиться задний фон, то вставь в video - poster="./путь_к_фону" -->
+                    <video src=""></video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="wrapper-video js-video">
+                    <span class="icon video-play">
+                      <svg>
+                        <use xlink:href="img/icons/play.svg#svg-play"></use>
+                      </svg>
+                    </span>
+                    <!-- Если понадобиться задний фон, то вставь в video - poster="./путь_к_фону" -->
+                    <video src=""></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/modals.html')
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

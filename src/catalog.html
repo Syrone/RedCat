@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <h1 class="visually-hidden">
+    Распродажа
+  </h1>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="section-main mye-xl-32">
+        <div class="container section-main__inner">
+          <div class="section-header">
+            <h2 class="section-title">
+              Товары для кошек
+            </h2>
+          </div>
+          <div class="grid-row grid-gap-5 grid-gap-y-md-0 grid-gap-x-md-12 js-catalog-dropdown">
+            <div class="grid-col-3 grid-col-xl-4 grid-col-lg-5 grid-col-md-12">
+              <div class="catalog__aside-filter d-none d-md-flex">
+                <button type="button" class="btn btn-outline-primary catalog__filter-btn js-catalog-dropdown-btn">
+                  <span class="icon">
+                    <svg>
+                      <use xlink:href="img/icons/filter.svg#svg-filter"></use>
+                    </svg>
+                  </span>
+                  Фильтры
+                </button>
+
+                <button type="button" class="btn btn-outline-primary catalog__filter-btn catalog__filter-btn--sort">
+                  <span class="icon">
+                    <svg>
+                      <use xlink:href="img/icons/sort.svg#svg-sort"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <aside id="catalogFilterTransfer" class="catalog__aside js-catalog-dropdown-content">
+                <div class="catalog__aside-accordion accordion">
+                  <button type="button" class="btn accordion__btn">
+                    Корм <span class="catalog__aside-current">1784</span>
+                    <span class="icon accordion__btn-icon">
+                      <svg>
+                        <use xlink:href="img/icons/dropdown.svg#svg-dropdown"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="accordion__content-inner">
+                      <ul class="list-reset catalog__aside-list catalog__aside-list--sm">
+                        <li class="catalog__aside-item">
+                          <a href="#" class="btn btn-inherit catalog__aside-link">
+                            Сухой корм
+                          </a>
+                        </li>
+                        <li class="catalog__aside-item">
+                          <a href="#" class="btn btn-inherit catalog__aside-link">
+                            Влажный корм 
+                          </a>
+                        </li>
+                        <li class="catalog__aside-item">
+                          <a href="#" class="btn btn-inherit catalog__aside-link">
+                            Сухие диеты
+                          </a>
+                        </li>
+                        <li class="catalog__aside-item">
+                          <a href="#" class="btn btn-inherit catalog__aside-link">
+                            Влажные диеты
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Наполнители <span class="catalog__aside-current">222</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Лакомства  <span class="catalog__aside-current">616</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Миски, кормушки, поилки <span class="catalog__aside-current">176</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Лотки и туалеты <span class="catalog__aside-current">264</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Корректоры поведения и средства от запаха <span class="catalog__aside-current">101</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Лежанки и домики <span class="catalog__aside-current">358</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Игрушки, дразнилки <span class="catalog__aside-current">765</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Когтеточки и комплексы <span class="catalog__aside-current">315</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Косметика и уход <span class="catalog__aside-current">66</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Товары для груминга <span class="catalog__aside-current">167</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Сумки и переноски <span class="catalog__aside-current">376</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Амуниция <span class="catalog__aside-current">170</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link catalog__aside-link--solo">
+                  Аксессуары <span class="catalog__aside-current">39</span>
+                </a>
+                <a href="#" class="btn btn-inherit catalog__aside-link">
+                  Продукция "Рыжий кот" <span class="catalog__aside-current">280</span>
+                </a>
+              </aside>
+            </div>
+            <div class="grid-col-9 grid-col-xl-8 grid-col-lg-7 grid-col-md-12">
+              <div class="catalog__filter" data-da="#catalogFilterTransfer,768,first">
+                <div class="wrapper-field">
+                  <select class="select select-outline-primary">
+                    <option value="">Бренд</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <span class="icon select-arrow">
+                    <svg>
+                      <use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="wrapper-field">
+                  <select class="select select-outline-primary">
+                    <option value="">Возраст</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <span class="icon select-arrow">
+                    <svg>
+                      <use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="wrapper-field">
+                  <select class="select select-outline-primary">
+                    <option value="">Обьем</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <span class="icon select-arrow">
+                    <svg>
+                      <use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="wrapper-field">
+                  <select class="select select-outline-primary">
+                    <option value="">Цвет</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <span class="icon select-arrow">
+                    <svg>
+                      <use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="wrapper-field">
+                  <select class="select select-outline-primary">
+                    <option value="">По умолчанию</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <span class="icon select-arrow">
+                    <svg>
+                      <use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="grid-row grid-gap-4">
+                <div class="grid-col-4 grid-col-xl-6 grid-col-lg-12 grid-col-md-6 grid-col-sm-12 d-flex justify-content-center">
+                  @include('partials/card.html')
+                </div>
+                <div class="grid-col-4 grid-col-xl-6 grid-col-lg-12 grid-col-md-6 grid-col-sm-12 d-flex justify-content-center">
+                  @include('partials/card.html')
+                </div>
+                <div class="grid-col-4 grid-col-xl-6 grid-col-lg-12 grid-col-md-6 grid-col-sm-12 d-flex justify-content-center">
+                  @include('partials/card.html')
+                </div>
+                <div class="grid-col-4 grid-col-xl-6 grid-col-lg-12 grid-col-md-6 grid-col-sm-12 d-flex justify-content-center">
+                  @include('partials/card.html')
+                </div>
+                <div class="grid-col-4 grid-col-xl-6 grid-col-lg-12 grid-col-md-6 grid-col-sm-12 d-flex justify-content-center">
+                  @include('partials/card.html')
+                </div>
+                <div class="grid-col-4 grid-col-xl-6 grid-col-lg-12 grid-col-md-6 grid-col-sm-12 d-flex justify-content-center">
+                  @include('partials/card.html')
+                </div>
+                <div class="grid-col-4 grid-col-xl-6 grid-col-lg-12 grid-col-md-6 grid-col-sm-12 d-flex justify-content-center">
+                  @include('partials/card.html')
+                </div>
+                <div class="grid-col-4 grid-col-xl-6 grid-col-lg-12 grid-col-md-6 grid-col-sm-12 d-flex justify-content-center">
+                  @include('partials/card.html')
+                </div>
+                <div class="grid-col-4 grid-col-xl-6 grid-col-lg-12 grid-col-md-6 grid-col-sm-12 d-flex justify-content-center">
+                  @include('partials/card.html')
+                </div>
+              </div>
+              <div class="pagination">
+                <button type="button" class="btn pagination__prev">
+                  <span class="icon">
+                    <svg>
+                      <use xlink:href="img/icons/swiper-arrow-left.svg#svg-swiper-arrow-left"></use>
+                    </svg>
+                  </span>
+                </button>
+                <ul class="list-reset pagination__list">
+                  <li class="pagination__list-item">
+                    <button type="button" class="btn btn-outline-primary pagination__list-btn is-active">
+                      1
+                    </button>
+                  </li>
+                  <li class="pagination__list-item">
+                    <button type="button" class="btn btn-outline-primary pagination__list-btn">
+                      2
+                    </button>
+                  </li>
+                  <li class="pagination__list-item">
+                    <button type="button" class="btn btn-outline-primary pagination__list-btn">
+                      3
+                    </button>
+                  </li>
+                </ul>
+                <button type="button" class="btn pagination__next">
+                  <span class="icon">
+                    <svg>
+                      <use xlink:href="img/icons/swiper-arrow-right.svg#svg-swiper-arrow-right"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/modals.html')
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

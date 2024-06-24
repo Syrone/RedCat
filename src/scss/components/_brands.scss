@@ -40,3 +40,42 @@
 		}
 	}
 }
+
+.brand-alphabet {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-block-end: 2.5rem;
+
+	&__btn {
+		--_height: 2rem;
+		--_color: var(--primary-color);
+		--_padding-x: .625rem;
+
+		--_color-active: var(--light-color);
+		--_background-color-active: var(--background-primary);
+
+	}
+}
+
+.brand-item {
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
+	line-height: 1.375;
+	background-color: var(--background-primary-25);
+	border-radius: var(--radius-3xl);
+	padding: 2.5rem;
+
+	&__image {
+		width: 3.5rem;
+		height: 3.5rem;
+		display: block;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(6, minmax(0, auto));
+		gap: .75rem clamp(1rem, 4vw, 3.75rem);
+	}
+}

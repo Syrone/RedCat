@@ -40,6 +40,23 @@
 		&.graph-modal-open {
 			display: flex;
 		}
+
+		&--checkbox {
+			.graph-modal__form-checkbox {
+				align-items: flex-start;
+				gap: .375rem;
+				margin-top: .625rem;
+			}
+
+			.graph-modal__form-buttons {
+				margin-block: .625rem 0;
+			}
+
+			.custom-checkbox__content {
+				margin-top: .125rem;
+				font-size: 12px;
+			}
+		}
 	}
 
 	&__content {

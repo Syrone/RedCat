@@ -744,6 +744,21 @@
 	}
 }
 
+.card--cart-v2 {
+	--card-background-color: #FFF8F0;
+	--card-border: 0;
+
+	.card__info-end {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.card__current {
+		color: var(--gray-color);
+	}
+}
+
 .card__list {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));

@@ -5,7 +5,8 @@ const swiperMainClass = document.querySelectorAll('.swiper-main'),
 			swiperCardClass = document.querySelectorAll('.swiper-card'),
 			swiperRecommendedClass = document.querySelectorAll('.swiper-recommended'),
 			swiperStoresClass = document.querySelectorAll('.swiper-stores'),
-			swiperGalleryClass = document.querySelectorAll('.swiper-gallery')
+			swiperGalleryClass = document.querySelectorAll('.swiper-gallery'),
+			swiperVideoClass = document.querySelectorAll('.swiper-video')
 
 swiperMainClass?.forEach((classSwiper) => {
 	const swiper = classSwiper.querySelector('.swiper'),
@@ -158,6 +159,39 @@ swiperGalleryClass?.forEach((classSwiper) => {
 			el: pagination,
 			clickable: true,
 		}
+	})
+})
+
+swiperVideoClass?.forEach((classSwiper) => {
+	const swiper = classSwiper.querySelector('.swiper'),
+				navPrev = classSwiper.querySelector('.swiper-button-prev'),
+				navNext = classSwiper.querySelector('.swiper-button-next')
+
+	new Swiper(swiper, {
+		slidesPerView: 1,
+		grabCursor: true,
+		spaceBetween: 30,
+		loop: true,
+
+		navigation: {
+			prevEl: navPrev,
+			nextEl: navNext,
+		},
+
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+				spaceBetween: 20
+			},
+			576: {
+				slidesPerView: 1,
+				spaceBetween: 20
+			},
+			1200: {
+				slidesPerView: 1,
+				spaceBetween: 30
+			}
+		},
 	})
 })
 

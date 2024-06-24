@@ -8,5 +8,7 @@ import './components/search.js';
 import './components/account.js';
 import './components/tabs.js';
 import './components/video.js';
+import './components/choices.js';
+import './components/file.js';
 import './components/accordion.js';
 import './components/catalog-dropdown.js';

@@ -1,3 +1,74 @@
 .custom-checkbox {
 	@include custom-checkbox
 }
+
+.custom-checkbox--radio {
+	align-items: flex-start;
+	background-color: #FFF8F0;
+	border-radius: var(--radius-xl);
+	padding: 1.25rem;
+
+	.custom-checkbox__wrapper {
+		flex-shrink: 0;
+	}
+
+	.custom-checkbox__field {
+		width: 1.25rem;
+		height: 1.25rem;
+		border: 1px solid var(--dark-color);
+
+		&:checked {
+			background-color: var(--primary-color);
+			border-color: var(--primary-color);
+		}
+	}
+
+	.custom-checkbox__checked {
+		width: .625rem;
+		height: .625rem;
+		background-image: unset;
+		background-color: #fff;
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.custom-checkbox__content {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+
+		&-title {
+			font-family: var(--font-family);
+			font-size: var(--fs);
+			color: var(--dark-color);
+			margin-block: .25rem 0;
+		}
+
+		&-name {
+			display: block;
+			font-size: var(--fs-lg);
+			color: var(--dark-color);
+			margin-top: .625rem;
+		}
+
+		&-address {
+			max-width: 20rem;
+			display: block;
+			font-style: normal;
+		}
+
+		&-change {
+			--_height: 1.875rem;
+			--_color: var(--primary-color);
+			--_background-color: #FFEBD4;
+			--_border-radius: var(--radius-xl);
+			--_padding-x: 2.5rem;
+	
+			--_color-active: var(--light-color);
+			--_background-color-active: var(--primary-color);
+		}
+	}
+}

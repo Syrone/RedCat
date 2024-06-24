@@ -1,0 +1,6 @@
+<svg id="svg-filter" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 7H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<path d="M2 14H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<circle cx="6" cy="7" r="2.5" fill="white" stroke="currentColor"/>
+<circle cx="14" cy="14" r="2.5" fill="white" stroke="currentColor"/>
+</svg>

@@ -1,0 +1,48 @@
+.banner {
+	min-height: 12.5rem;
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
+	font-size: var(--fs-lg);
+	background-image: url(../img/banner/decoration.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #FFEFDC;
+	border-radius: var(--radius-3xl);
+	padding: 1.25rem;
+	position: relative;
+
+	&-decor {
+		width: 5.625rem;
+		height: 5.625rem;
+		display: block;
+		background-image: url(../img/background/svg/decoration-pattern-18.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		position: absolute;
+		top: -1.75rem;
+		right: -1rem;
+	}
+
+	&__start {
+		flex-shrink: 0;
+	}
+
+	&__image {
+		display: block;
+		border-radius: var(--radius-3xl);
+	}
+
+	&__title {
+		font-family: var(--font-family);
+		font-size: inherit;
+		margin-bottom: 1.25rem;
+	}
+
+	&__content {
+		max-width: 36.25rem;
+		color: var(--gray-color);
+	}
+}

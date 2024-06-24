@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <h1 class="visually-hidden">
+    Каталог бренда
+  </h1>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="section-main section mye-xl-32">
+        <div class="container section-main__inner">
+          <div class="banner">
+            <span class="banner-decor"></span>
+            <div class="banner__start">
+              <picture class="banner__picture">
+                <source srcset="./img/banner/picture.webp" type="image/webp">
+                <img loading="lazy" src="./img/banner/picture.jpg" class="banner__image" width="340" height="160" alt="Картинка">
+              </picture>
+            </div>
+            <div class="banner__end">
+              <h2 class="banner__title">
+                «Здоровье питомцев — наша главная забота»
+              </h2>
+              <div class="banner__content">
+                <p>
+                  Как известно, наука не стоит на месте и постоянно двигается вперед, появляются новые знания и здоровое питание для животных укрепляет свои позиции. Подход Royal Canin® к обеспечению здорового питания для животных является примером для многих брендов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <ul class="list-reset filter--buttons">
+              <li class="filter__item--buttons filter__item--buttons-v2">
+                <button type="button" class="btn btn-outline-primary is-active filter__item-btn--buttons">
+                  все товары
+                </button>
+              </li>
+              <li class="filter__item--buttons filter__item--buttons-v2">
+                <button type="button" class="btn btn-outline-primary filter__item-btn--buttons">
+                  для взрослых
+                </button>
+              </li>
+              <li class="filter__item--buttons filter__item--buttons-v2">
+                <button type="button" class="btn btn-outline-primary filter__item-btn--buttons">
+                  для котят и щенят
+                </button>
+              </li>
+              <li class="filter__item--buttons filter__item--buttons-v2">
+                <button type="button" class="btn btn-outline-primary filter__item-btn--buttons">
+                  для породистых
+                </button>
+              </li>
+              <li class="filter__item--buttons filter__item--buttons-v2">
+                <button type="button" class="btn btn-outline-primary filter__item-btn--buttons">
+                  ветеринарные корма
+                </button>
+              </li>
+            </ul>
+          </div>
+          <ul class="list-reset card__list">
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+            <li class="card__list-item">
+              @include('partials/card--sale.html')
+            </li>
+          </ul>
+          <div class="pagination">
+            <button type="button" class="btn pagination__prev">
+              <span class="icon">
+                <svg>
+                  <use xlink:href="img/icons/swiper-arrow-left.svg#svg-swiper-arrow-left"></use>
+                </svg>
+              </span>
+            </button>
+            <ul class="list-reset pagination__list">
+              <li class="pagination__list-item">
+                <button type="button" class="btn btn-outline-primary pagination__list-btn is-active">
+                  1
+                </button>
+              </li>
+              <li class="pagination__list-item">
+                <button type="button" class="btn btn-outline-primary pagination__list-btn">
+                  2
+                </button>
+              </li>
+              <li class="pagination__list-item">
+                <button type="button" class="btn btn-outline-primary pagination__list-btn">
+                  3
+                </button>
+              </li>
+            </ul>
+            <button type="button" class="btn pagination__next">
+              <span class="icon">
+                <svg>
+                  <use xlink:href="img/icons/swiper-arrow-right.svg#svg-swiper-arrow-right"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/modals.html')
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

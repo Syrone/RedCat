@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <h1 class="visually-hidden">
+    Добавьте объявление
+  </h1>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="section-main mye-xl-32">
+        <div class="container section-main__inner">
+          <div class="section-header cart-header">
+            <h2 class="section-title cart-title">
+              Добавьте объявление
+            </h2>
+          </div>
+          
+          <div class="collaboration collaboration--v3" style="background-image: url(./img/announcement/decoration.svg);">
+            <span class="collaboration-decor"></span>
+            <form class="collaboration__form">
+              <div class="grid-row grid-gap-y-4 grid-gap-x-3">
+                <div class="grid-col-6 grid-col-md-12">
+                  <div class="wrapper-field">
+                    <select class="js-choices--lg" required>
+                      <option value="">Категория животного</option>
+                      <option value="1">Что-то первое</option>
+                      <option value="2">Что-то второн</option>
+                      <option value="3">Что-то третье</option>
+                    </select>
+                  </div>
+                  <div class="wrapper-field">
+                    <select class="js-choices--lg" required>
+                      <option value="">Тип объявления</option>
+                      <option value="1">Что-то первое</option>
+                      <option value="2">Что-то второе</option>
+                      <option value="3">Что-то третье</option>
+                    </select>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="breed" placeholder="Порода" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <textarea class="input input-lg input-light input-lg-primary-25" name="description" placeholder="Описание питомца" required></textarea>
+                  </div>
+                </div>
+                <div class="grid-col-6 grid-col-md-12">
+                  <div class="wrapper-field">
+                    <label class="file input input-lg input-light input-lg-primary-25">
+                      <input type="file" name="file" class="file__input" required>
+                      <span class="file__name">Фотография животного</span>
+                      <button class="btn file__btn">выбрать файл</button>
+                    </label>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="text" class="input input-lg input-light input-lg-primary-25" name="full-name" placeholder="ФИО" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="tel" class="input input-lg input-light input-lg-primary-25" name="tel" placeholder="Телефон" required>
+                  </div>
+                  <div class="wrapper-field">
+                    <input type="email" class="input input-lg input-light input-lg-primary-25" name="email" placeholder="E-mail" required>
+                  </div>
+                  <label class="custom-checkbox">
+                    <div class="custom-checkbox__wrapper">
+                      <input type="checkbox" class="custom-checkbox__field" required="">
+                      <span class="custom-checkbox__checked"></span>
+                    </div>
+                    <span class="custom-checkbox__content">
+                      Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных
+                    </span>
+                  </label>
+                  <div class="collaboration__form-bottom">
+                    <button type="submit" class="btn btn-primary">
+                      отправить
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/modals.html')
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>
