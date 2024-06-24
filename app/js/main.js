@@ -319,6 +319,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const selectsLarge = document.querySelectorAll('.js-choices--lg');
 const selectInverses = document.querySelectorAll('.js-choices-inverse');
+const selectOutline = document.querySelectorAll('.js-choices-outline');
 const selectLargeConfig = {
   allowHTML: true,
   placeholder: true,
@@ -377,11 +378,43 @@ const selectInverseConfig = {
     };
   }
 };
+const selectOutlineConfig = {
+  allowHTML: true,
+  placeholder: true,
+  searchEnabled: false,
+  shouldSort: false,
+  itemSelectText: '',
+  classNames: {
+    containerOuter: 'choices choices--outline'
+  },
+  callbackOnCreateTemplates: function (template) {
+    return {
+      item: (_ref3, data) => {
+        let {
+          classNames
+        } = _ref3;
+        return template(`
+          <div class="${classNames.item} ${data.highlighted ? classNames.highlightedState : classNames.itemSelectable} ${data.placeholder ? classNames.placeholder : ''}" data-item data-id="${data.id}" data-value="${data.value}" ${data.active ? 'aria-selected="true"' : ''} ${data.disabled ? 'aria-disabled="true"' : ''}>
+            <span class="choices__item-value">${data.label}</span>
+						<span class="icon">
+							<svg>
+								<use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+							</svg>
+						</span>
+          </div>
+        `);
+      }
+    };
+  }
+};
 selectsLarge?.forEach(select => {
   new (choices_js__WEBPACK_IMPORTED_MODULE_0___default())(select, selectLargeConfig);
 });
 selectInverses?.forEach(select => {
   new (choices_js__WEBPACK_IMPORTED_MODULE_0___default())(select, selectInverseConfig);
+});
+selectOutline?.forEach(select => {
+  new (choices_js__WEBPACK_IMPORTED_MODULE_0___default())(select, selectOutlineConfig);
 });
 
 /***/ }),
@@ -22080,4 +22113,3 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map

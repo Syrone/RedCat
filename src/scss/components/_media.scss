@@ -1006,6 +1006,26 @@
 		}
 	}
 
+	.choices--outline {
+
+		.choices {
+
+			&__inner {
+				min-height: 2rem;
+			}
+
+			&__list {
+
+				&--dropdown,
+				&[aria-expanded] {
+					.choices__item {
+						padding-block: .5rem;
+					}
+				}
+			}
+		}
+	}
+
 	// swipers
 	.swiper-main .swiper-horizontal > .swiper-pagination-bullets,
 	.swiper-pagination-bullets.swiper-pagination-horizontal,

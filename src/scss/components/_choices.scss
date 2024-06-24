@@ -135,3 +135,29 @@ $choices-z-index: 10;
 		}
 	}
 }
+
+.#{$choices-selector}--outline {
+	color: var(--dark-color);
+
+	.#{$choices-selector} {
+
+		&__inner {
+			min-height: 2.5rem;
+			background-color: var(--background-light);
+			border-color: var(--primary-color);
+		}
+
+		&__list {
+
+			&--dropdown,
+			&[aria-expanded] {
+				background-color: var(--background-light);
+				border-color: var(--primary-color);
+	
+				.#{$choices-selector}__item {
+					padding-block: .75rem;
+				}
+			}
+		}
+	}
+}
